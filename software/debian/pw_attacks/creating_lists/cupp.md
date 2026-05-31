@@ -1,6 +1,7 @@
+```
 sudo apt install cupp -y
 cupp -i
-
+```
 
 
 
