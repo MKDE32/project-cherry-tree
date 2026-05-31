@@ -1,0 +1,125 @@
+# rpcclient Cheat Sheet (Pentesting Essentials)
+
+## 🔑 Authentication
+
+### Null session (no credentials)
+rpcclient -U "" -N <target_ip>
+
+### With username/password
+rpcclient -U username%password <target_ip>
+
+### Prompt for password
+rpcclient -U username <target_ip>
+
+---
+
+## 📡 Basic Enumeration
+
+### Get domain info
+querydominfo
+
+### Get server info
+srvinfo
+
+### Get domain SID
+lsaquery
+
+---
+
+## 👥 User Enumeration
+
+### List users
+enumdomusers
+
+### Query specific user (RID)
+queryuser <RID>
+
+### Get user groups
+queryusergroups <RID>
+
+### Get user info by name
+lookupnames <username>
+
+---
+
+## 👪 Group Enumeration
+
+### List groups
+enumdomgroups
+
+### Query group info
+querygroup <RID>
+
+### Get group members
+querygroupmem <RID>
+
+---
+
+## 🖥️ Share & System Info
+
+### List shares
+netshareenum
+
+### Enumerate logged-in users
+enumloggedonusers
+
+### Get OS version
+getdompwinfo
+
+---
+
+## 🔍 SID Enumeration
+
+### Lookup SIDs
+lookupsids <SID>
+
+### Brute-force SIDs (manual)
+for i in $(seq 500 1100); do rpcclient -N -U "" <target_ip> -c "queryuser $i"; done
+
+---
+
+## 🔑 Password Policy
+
+### Get password policy
+getdompwinfo
+
+---
+
+## 🧠 Useful Queries
+
+### Lookup usernames to RID
+lookupnames <name>
+
+### Lookup RID to username
+lookupsids <SID>
+
+---
+
+## ⚙️ Common Flags
+
+- -U → Username (format: user%pass)
+- -N → No password
+- -c → Execute command
+- -W → Domain
+- -I → Target IP
+
+---
+
+## ⚡ Tips
+
+- RIDs 500–550 often contain built-in/admin accounts
+- Works best when SMB (139/445) is open
+- Combine with enum4linux or crackmapexec for automation
+
+---
+
+## 🔁 One-liners
+
+### Enumerate users (null session)
+rpcclient -U "" -N <target_ip> -c enumdomusers
+
+### Get domain SID
+rpcclient -U "" -N <target_ip> -c lsaquery
+
+### Query admin user (RID 500)
+rpcclient -U "" -N <target_ip> -c "queryuser 500"

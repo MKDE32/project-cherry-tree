@@ -1,0 +1,8 @@
+###### FILE_TRANSFER ######
+### LISTENING ###
+DOWNLOAD
+nc -l -p 8000 > SharpKatz.exe
+
+
+
+

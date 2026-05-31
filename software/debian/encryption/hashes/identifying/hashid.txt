@@ -1,0 +1,15 @@
+#################### EXAMPLE ####################
+hashid -j 193069ceb0461e1d40d216e32c79c704
+
+
+
+#################### FLAGS ####################
+-j                  show john format
+-m                  show hashcat mode
+
+
+
+
+
+
+

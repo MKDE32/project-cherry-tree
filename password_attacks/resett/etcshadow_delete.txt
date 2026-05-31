@@ -1,0 +1,13 @@
+richtige partition mounten
+mount -t ext3 /dev/sda2 /mnt
+
+cd /mnt/etc
+
+öffnen der /etc/shadow datei
+
+die datei sieht ungefähr so aus:
+root:$6$1J085ieg$BLABLABLA0.Sb5ZvGe/:16152:0:99999:7:::
+jetzt alles löschen was sich zwischen dem ersten und zweiten doppelpunkt befindet
+
+sollte dann so aussehen:
+root::16152:0:99999:7:::

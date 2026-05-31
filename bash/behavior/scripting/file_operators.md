@@ -1,0 +1,11 @@
+-e 		if the file exist
+-f 		tests if it is a file
+-d 	tests if it is a directory
+-L 		tests if it is if a symbolic link
+-N 	checks if the file was modified after it was last read
+-O 	if the current user owns the file
+-G 	if the file’s group id matches the current user’s
+-s 		tests if the file has a size greater than 0
+-r 		tests if the file has read permission
+-w 	tests if the file has write permission
+-x 		tests if the file has execute permission

@@ -1,0 +1,25 @@
+auf die version von chntpw achten!!!
+0.99.6 funktioniert nicht!
+
+
+
+partitionen anschauen
+fdisk -l
+
+richtige partition mounten
+mount -t ntfs /dev/sdb2/media/
+
+ins verzeichnis der sam gehen
+cd /media/windows/system32/config
+
+anzeige sämtlicher benutzerkonten der sam
+/home/chntpw_0.99.5-0+nmu1_i386 -l SAM
+
+user auswählen dessen pw resettet werden soll
+/home/chntpw_0.99.5-0+nmu1_i386 -u “username” SAM
+löschen des kennworts?
+y
+
+unmounten
+cd/
+unmount/media

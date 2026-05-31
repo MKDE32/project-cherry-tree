@@ -1,0 +1,14 @@
+############ NETSH NEEDS ADMIN RIGHTS!!! ############
+netsh.exe interface portproxy add v4tov4 listenport=<pivotlistenport> listenaddress=<pivotlistenip> connectport=<forwarded port> connectaddress=<forwarded ip>
+
+netsh.exe interface portproxy show v4tov4
+
+xfreerdp /v: <pivotlistenip>:<pivotlistenport>
+
+
+
+
+
+
+
+

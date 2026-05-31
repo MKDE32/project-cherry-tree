@@ -1,0 +1,13 @@
+######################### GIT CLONE #########################
+https://github.com/digininja/CeWL
+
+
+
+######################### SCAN WEBSITE FOR KEYWORDS #########################
+cewl https://www.inlanefreight.com -d 4 -m 6 --lowercase -w inlane.wordlist
+
+
+
+
+
+

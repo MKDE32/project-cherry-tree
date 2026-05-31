@@ -1,0 +1,3 @@
+zeichnet smtp/pop auf (ganze mail nicht nur login)
+
+mailsnarf -i eth0

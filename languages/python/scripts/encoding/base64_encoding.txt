@@ -1,0 +1,8 @@
+import urllib.parse
+
+with open("liste.txt", "r", encoding="utf-8") as infile, \
+     open("encoded.txt", "w", encoding="utf-8") as outfile:
+    for line in infile:
+        outfile.write(
+            urllib.parse.quote(line.rstrip("\n"), safe=" ") + "\n"
+        )

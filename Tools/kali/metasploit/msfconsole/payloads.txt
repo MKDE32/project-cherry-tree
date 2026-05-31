@@ -1,0 +1,5 @@
+linux/x64/meterpreter/reverse_tcp
+
+windows/x64/meterpreter/reverse_tcp
+windows/x64/meterpreter/bind_tcp
+windows/x64/meterpreter/reverse_https

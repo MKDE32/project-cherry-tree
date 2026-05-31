@@ -1,0 +1,5 @@
+script has not been tested
+
+Set __COMPAT_LAYER=RunAsInvoker
+Start StreamSetup.exe
+

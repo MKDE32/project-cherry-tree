@@ -1,0 +1,18 @@
+https://github.com/urbanadventurer/username-anarchy
+./username-anarchy -i /home/ltnbob/names.txt
+
+nxc smb 10.129.202.85
+
+https://github.com/ropnop/kerbrute
+./kerbrute_linux_amd64 userenum --dc 10.129.201.57 --domain inlanefreight.local names.txt
+
+
+
+
+
+
+
+
+
+
+

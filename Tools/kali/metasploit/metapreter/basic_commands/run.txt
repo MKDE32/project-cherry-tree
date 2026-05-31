@@ -1,0 +1,10 @@
+run post/multi/gather/ping_sweep RHOSTS=172.16.5.0/23
+
+############ PIVOTING ############
+run autoroute -s 172.16.5.0/23
+run autoroute -p
+
+
+
+
+

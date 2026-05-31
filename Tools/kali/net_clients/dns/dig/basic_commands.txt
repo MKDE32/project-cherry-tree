@@ -1,0 +1,18 @@
+Version des DNS Servers abfragen (enthält auch OS Version)
+
+dig @10.129.2.48 version.bind chaos txt
+
+
+schickt eine dns abfrage an 10.129.14.128
+dig ns inlanefreight.htb @10.129.14.128
+
+We can use the option ANY to view all available records
+dig any inlanefreight.htb @10.129.14.128
+
+
+AXFR Zone Transfer
+dig axfr inlanefreight.htb @10.129.14.128
+
+
+Subdomain Brute Forcing
+for sub in $(cat /opt/useful/SecLists/Discovery/DNS/subdomains-top1million-110000.txt);do dig $sub.inlanefreight.htb @10.129.14.128 | grep -v ';\|SOA' | sed -r '/^\s*$/d' | grep $sub | tee -a subdomains.txt;done

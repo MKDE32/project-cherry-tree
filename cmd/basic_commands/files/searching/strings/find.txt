@@ -1,0 +1,7 @@
+find "password" "C:\Users\student\not-passwords.txt"
+/N    line numbers
+/I    ignore case sensitivity
+/V    not
+findstr <regex>
+comp -A -L .\file-1.md .\file-2.md
+fc passwords.txt modded.txt /N

@@ -1,0 +1,18 @@
+• dig domainname: Dieser Befehl sendet eine DNS-Anfrage an den angegebenen Domainnamen und gibt die Antwort auf die Standardausgabe aus.
+• dig domainname MX: Dieser Befehl gibt die MX-Einträge (Mail Exchange) der angegebenen Domain aus.
+• dig domainname NS: Dieser Befehl gibt die NS-Einträge (Name Server) der angegebenen Domain aus.
+• dig domainname SOA: Dieser Befehl gibt den Start of Authority-Eintrag der angegebenen Domain aus.
+• dig @nameserver domainname: Dieser Befehl sendet die DNS-Anfrage an den angegebenen Namensserver statt an den Standard-Namensserver.
+• dig -x IP-Adresse: Dieser Befehl sendet eine Reverse-DNS-Anfrage an die angegebene IP-Adresse und gibt den Domainnamen aus, der mit der IP-Adresse verknüpft ist.
+
+
+
+
+
+
+
+
+
+
+
+

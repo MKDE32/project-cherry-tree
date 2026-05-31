@@ -1,0 +1,19 @@
+# EXAMPLE
+`whatever commands 2> /dev/null` redirect error messages to /dev/null
+
+
+
+`command1 | command2` redirect stdout from c1 to c2
+
+
+
+`to < from` stdin to  
+`from > to` stdout to and replace  
+`from >> to` stdout to and append  
+`from 2> to` stderr to  
+
+
+
+`0` stdin  
+`1` stdout  
+`2` stderr  

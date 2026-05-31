@@ -1,0 +1,30 @@
+##### Linux (printenv) #####
+${PATH}
+$PWD
+$HOME
+${LS_COLORS}
+
+
+
+##### Windows (set) #####
+%HOMEPATH%
+
+
+
+##### Windows (Get-ChildItem Env) :#####
+$env:HOMEPATH
+$env:PROGRAMFILES
+
+
+
+
+
+
+
+
+
+
+
+
+
+

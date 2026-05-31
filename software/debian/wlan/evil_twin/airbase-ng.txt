@@ -1,0 +1,7 @@
+airbase-ng -e “INTERNET4FREE” -a 00:1C:A4:A5:90:45 -c 9 -P mon0
+
+-e			essid
+-a 			bssid
+-c 			channel
+-P 			respond to all probes even when specifying essid
+mon0 	interface

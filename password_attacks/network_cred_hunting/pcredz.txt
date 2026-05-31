@@ -1,0 +1,29 @@
+#################### INSTALL ####################
+https://github.com/lgandx/PCredz
+In order to run Pcredz, one may either clone the repository and install all dependencies,
+or use the provided Docker container detailed in the Install portion of the README file.
+
+
+
+#################### RUN AGAINST A PCAP FILE ####################
+./Pcredz -f demo.pcapng -t -v
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

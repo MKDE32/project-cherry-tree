@@ -1,0 +1,61 @@
+# === START ===
+msfconsole
+
+# === SEARCH & SELECT ===
+search <keyword>
+use <module>
+info
+
+# === SHOW ===
+show options
+show payloads
+show targets
+
+# === SET OPTIONS ===
+set RHOSTS <target_ip>
+set RPORT <port>
+set LHOST <your_ip>
+set LPORT <your_port>
+set PAYLOAD <payload>
+
+# global options
+setg <option>
+unset <option>
+get <option>
+
+# === RUN ===
+run
+exploit
+exploit -j      # background job
+exploit -z      # no interaction
+
+# === SESSIONS ===
+sessions
+sessions -i <id>
+sessions -k <id>
+
+# === JOBS ===
+jobs
+jobs -k <id>
+
+# === AUXILIARY (SCANNING) ===
+use auxiliary/scanner/<type>/<module>
+run
+
+# === DATABASE ===
+workspace
+workspace -a <name>
+hosts
+services
+vulns
+
+# === LOGGING ===
+spool <file>
+spool off
+save
+
+# === MISC ===
+back
+history
+exit
+# === END ===

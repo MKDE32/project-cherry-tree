@@ -1,0 +1,21 @@
+
+.conf files apache
+/etc/apache2/httpd.conf
+/etc/apache2/apache2.conf
+/etc/httpd/httpd.conf
+/etc/httpd/conf/httpd.conf
+
+rules for intern access
+/etc/apache2/sites-enabled/internal.conf
+
+directory that holds virtual-host configuration files
+/etc/apache2/sites-available/000-default.conf
+
+active virtual hosts that Apache actually uses
+/etc/apache2/sites-enabled/000-default.conf
+
+configure access on a directory-level defaulf
+/var/www/html/.htaccess
+
+configure access on a directory-level For another virtual host
+/var/www/vhost/.htaccess

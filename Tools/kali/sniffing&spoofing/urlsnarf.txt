@@ -1,0 +1,5 @@
+liest http traffic mit
+es lässt sich außerdem der webbrowser (erkennbar am user agent) und das antivir programm erkennen
+
+
+urlsnarf -i eth0

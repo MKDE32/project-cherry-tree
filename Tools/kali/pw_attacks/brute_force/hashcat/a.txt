@@ -1,0 +1,26 @@
+#################### ATTACK MODES ####################
+  0 | dictionary
+  1 | Combination
+  3 | mask
+  6 | Hybrid Wordlist + Mask
+  7 | Hybrid Mask + Wordlist
+  9 | Association
+
+
+
+
+#################### CUSTOM MASK ATTACK ####################
+?l 	abcdefghijklmnopqrstuvwxyz
+?u 	ABCDEFGHIJKLMNOPQRSTUVWXYZ
+?d 	0123456789
+?h 	0123456789abcdef
+?H 	0123456789ABCDEF
+?s 	«space»!"#$%&'()*+,-./:;<=>?@[]^_`{
+?a 	?l?u?d?s
+?b 	0x00 - 0xff
+
+
+
+#################### MASK ATTACK ####################
+hashcat -a 3 -1 abcdef -2 123 \
+hash.txt ?1?1?2?2?1?2

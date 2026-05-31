@@ -1,0 +1,30 @@
+#################### INSTALL ####################
+git clone https://github.com/danielbohannon/Invoke-DOSfuscation.git
+cd Invoke-DOSfuscation
+Import-Module .\Invoke-DOSfuscation.psd1
+
+
+
+#################### INSTALL ####################
+Invoke-DOSfuscation
+help
+tutorial
+
+
+
+#################### EXAMPLE ####################
+SET COMMAND type C:\Users\htb-student\Desktop\flag.txt
+encoding
+1
+
+
+
+#################### RUNNING ON LINUX ####################
+Run pwsh, and then follow the exact same command from above. You can also find installation instructions at:
+https://learn.microsoft.com/en-us/powershell/scripting/install/install-powershell-on-linux?view=powershell-7.5
+
+
+
+
+
+  

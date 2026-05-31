@@ -1,0 +1,43 @@
+• theharvester -d example.com -l 500 -b google: Dieser Befehl sammelt bis zu 500 E-Mail-Adressen und IP-Adressen für die Domain example.com über die Google-Suchmaschine.
+• theharvester -d example.com -l 500 -b bing: Dieser Befehl sammelt bis zu 500 E-Mail-Adressen und IP-Adressen für die Domain example.com über die Bing-Suchmaschine.
+• theharvester -d example.com -l 500 -b linkedin: Dieser Befehl sammelt bis zu 500 E-Mail-Adressen und IP-Adressen für die Domain example.com über LinkedIn.
+• theharvester -d example.com -l 500 -b github: Dieser Befehl sammelt bis zu 500 E-Mail-Adressen und IP-Adressen für die Domain example.com über GitHub.
+
+
+
+
+
+
+
+
+
+
+
+
+
+create a txt with the following entries:
+baidu
+bufferoverun
+crtsh
+hackertarget
+otx
+projecdiscovery
+rapiddns
+sublist3r
+threatcrowd
+trello
+urlscan
+vhost
+virustotal
+zoomeye
+
+Once the file is created, we will execute the following commands to gather information from these sources.
+export TARGET="facebook.com"
+cat sources.txt | while read source; do theHarvester -d "${TARGET}" -b $source -f "${source}_${TARGET}";done
+
+When the process finishes, we can extract all the subdomains found and sort them via the following command:
+cat *.json | jq -r '.hosts[]' 2>/dev/null | cut -d':' -f 1 | sort -u > "${TARGET}_theHarvester.txt"
+
+Now we can merge all the passive reconnaissance files via:
+cat facebook.com_*.txt | sort -u > facebook.com_subdomains_passive.txt
+cat facebook.com_subdomains_passive.txt | wc -l

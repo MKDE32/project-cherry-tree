@@ -1,0 +1,2 @@
+ADDUSER
+adduser bob

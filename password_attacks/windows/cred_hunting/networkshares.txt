@@ -1,0 +1,32 @@
+#################### STRING SEARCH POWERSHELL ####################
+Get-ChildItem -Recurse -Include *.* \\DC01.inlanefreight.local\IT | Select-String -Pattern "INLANEFREIGHT\\"
+
+
+
+#################### SNAFFLER (NEED 2 BE IN A DOMAIN) ####################
+https://github.com/SnaffCon/Snaffler
+Snaffler.exe -s
+-u         retrieves a list of users from Active Directory and searches for references to them in files
+-i         allow you to specify which shares should be included in the search
+-n         allow you to specify which shares should be included in the search
+-o \path   output log path
+
+
+#################### POWERHUNTSHARES (NO DOMAIN JOIN NEEDED) ####################
+https://github.com/NetSPI/PowerHuntShares
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+import-module .\powerhuntshares.psm1
+Invoke-HuntSMBShares -Threads 100 -OutputDirectory c:\Users\Public
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,42 @@
+#################### EXAMPLES ####################
+john --format=ripemd-128 --wordlist='/rockyou.txt' '/hashes.txt'
+john ssh.hash --show
+
+
+#################### MODES ####################
+--single                      linux passwd file
+--incremental                 dynamic passwd generator /etc/john/john.conf
+--wordlist=<wordlist_file>    wordlist
+
+
+
+#################### FLAGS ####################
+--rules                        transformations
+--format=                      format
+--show <password_file>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

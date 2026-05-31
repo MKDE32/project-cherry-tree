@@ -1,0 +1,41 @@
+#################### INSTALL ####################
+git clone https://github.com/Bashfuscator/Bashfuscator
+cd Bashfuscator
+pip3 install setuptools==65
+python3 setup.py install --user
+
+
+
+#################### HELP ####################
+HELP                           ./bashfuscator -h
+LIST MUTATORS                  bashfuscator -l
+
+
+
+#################### EXAMPLES ####################
+BASIC COMMAND                                     ./bashfuscator -c 'cat /etc/passwd'
+REDUCING LENGHT AND COMPLEXITY                    ./bashfuscator -c 'cat /etc/passwd' -s 1 -t 1 --no-mangling --layers 1
+USING MUTATORS                                    bashfuscator -c "cat /etc/passwd" --choose-mutators token/special_char_only compress/bzip2 command/case_swapper command/reverse
+
+
+
+#################### FLAGS ####################
+PAYLOAD SIZE                               -s 1
+PAYLOAD EXECUTION TIME                     -t 1
+PAYLOAD TO FILE                            -o
+PAYLOAD TO CLIPBOARD                       --clip
+AMMOUNT OF OBFUSCATION LAYERS              --layers 1
+TEST AFTER CREATING THE PAYLOAD            --test
+INCLUDES NON PRINTABLE CHARS               --full-ascii-strings
+SELECT THE MUTATORS                        --choose-mutators
+???                                        --no-mangling
+
+
+
+
+
+
+
+
+
+

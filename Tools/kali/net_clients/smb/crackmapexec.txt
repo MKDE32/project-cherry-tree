@@ -1,0 +1,17 @@
+########## EXAMPLES ##########
+crackmapexec smb 10.129.230.148
+
+# NULLSESSION #
+crackmapexec smb 10.129.230.148 -u "" -p "" --users
+
+# GUEST ACCESS #
+crackmapexec smb 10.129.230.148 -u guest -p "" --shares
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,5 @@
+Graphically displaying the directory structure of a path
+tree <directory>
+
+Walk through results of the `tree` command page by page
+tree c:\ /f \| more

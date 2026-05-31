@@ -1,0 +1,49 @@
+git clone https://github.com/utoni/ptunnel-ng.git
+
+sudo apt install automake autoconf -y
+cd ptunnel-ng/
+sed -i '$s/.*/LDFLAGS=-static "${NEW_WD}\/configure" --enable-static $@ \&\& make clean \&\& make -j${BUILDJOBS:-4} all/' autogen.sh
+./autogen.sh
+ldd src/ptunnel-ng
+#output should show not a dynamic executable#
+
+scp -r ptunnel-ng ubuntu@10.129.5.187:~/
+
+############ PIVOT HOST ############
+ssh ubuntu@10.129.5.187
+cd /ptunnel-ng/src
+sudo ./ptunnel-ng -r10.129.5.187 -R22
+
+############ ATTACK BOX ############
+sudo ./ptunnel-ng -p10.129.5.187 -l2222 -r10.129.5.187 -R22
+ssh -p2222 -lubuntu 127.0.0.1
+
+############ SETTING UP PIVOTING ############
+#dont forget to set proxychains to socks5!!!!!#
+ssh -D 9050 -p2222 -lubuntu 127.0.0.1
+proxychains nc -v 172.16.5.19 3389
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

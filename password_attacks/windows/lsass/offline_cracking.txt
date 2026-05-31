@@ -1,0 +1,42 @@
+#################### OFFLINE EXTRACTING WITH PYPKATZ ####################
+https://github.com/skelsec/pypykatz
+pypykatz lsa minidump /home/peter/Documents/lsass.dmp
+
+
+
+#################### PYPKATZ OUTPUT INFO ####################
+MSV               is an authentication package in Windows that LSA calls on to validate logon attempts against the SAM database. Pypykatz extracted the SID, Username,
+                  Domain, and even the NT & SHA1 password hashes
+WDIGEST           is an older authentication protocol enabled by default in Windows XP - Windows 8 and Windows Server 2003 - Windows Server 2012. LSASS caches credentials
+                  used by WDIGEST in clear-text.
+Kerberos          is a network authentication protocol used by Active Directory in Windows Domain environments. Domain user accounts are granted tickets upon authentication
+                  with Active Directory. This ticket is used to allow the user to access shared resources on the network that they have been granted access to without needing
+                  to type their credentials each time. LSASS caches passwords, ekeys, tickets, and pins associated with Kerberos. It is possible to extract these from LSASS
+                  process memory and use them to access other systems joined to the same domain.
+DPAPI:            Mimikatz and Pypykatz can extract the DPAPI masterkey for logged-on users whose data is present in LSASS process memory. These masterkeys can then be used
+                  to decrypt the secrets associated with each of the applications using DPAPI and result in the capturing of credentials for various accounts. 
+
+
+
+#################### CRACKING WITH HASHCAT ####################
+sudo hashcat -m 1000 64f12cddaa88057e06a81b54e73b949b /usr/share/wordlists/rockyou.txt
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

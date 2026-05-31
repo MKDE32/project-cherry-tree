@@ -1,0 +1,27 @@
+# overview
+- chisel uses socks5 tunneling
+
+# capabilitys
+- platform independent
+- no admin rights needed if:
+  - port > 1024
+  - user rights
+  - outgoing traffic allowed
+- adminright needed if
+  - virtual netadapter
+
+# static build
+- if you build chisel by your own you will need to use go
+- it is necessary to build the same version on attacker and target.
+- to do so we need to use a `static clib build`
+- to do so we use the `CGO_ENABLED=0` variable
+- to check it we can use `file chisel` or `ldd chisel`
+
+# reverse
+- victim -> attacker
+  - server = attacker
+  - client = victim
+# forward
+- attacker -> victim
+  - client = attacker
+  -  server = victim

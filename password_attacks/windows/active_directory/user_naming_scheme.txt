@@ -1,0 +1,26 @@
+Username convention	Practical example for Jane Jill Doe
+firstinitiallastname	                jdoe
+firstinitialmiddleinitiallastname	    jjdoe
+firstnamelastname	                    janedoe
+firstname.lastname	                  jane.doe
+lastname.firstname	                  doe.jane
+nickname	                            doedoehacksstuff
+name in the mailadress                jdoe@inlanefreight.com        use google!!!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

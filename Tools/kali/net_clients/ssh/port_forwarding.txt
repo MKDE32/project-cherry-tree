@@ -1,0 +1,18 @@
+############ LOCAL PORT FORWARDING ############
+ssh -L <LOCAL PORT>:<FORWARDING IP>:<FORWARDING PORT> ubuntu@10.129.202.64
+
+############ DYNAMIC PORT FORWARDING (PROXYCHAINS) ############
+ssh -D <LOCAL PORT> ubuntu@10.129.202.64
+
+############ REVERSE PORT FORWARDING ############
+ssh -R <InternalIPofPivotHost>:<FORWARDING PORT>:<PIVOTE HOST LISTEN IP>:<PIVOTE HOST LISTEN PORT> ubuntu@<ipAddressofTarget> -vN
+
+
+
+
+
+
+
+
+
+

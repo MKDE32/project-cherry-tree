@@ -1,0 +1,8 @@
+bruteforcen von truecrypt festplattenverschlüsselung
+
+
+
+truecrack -t /home/truecryptvolume -k ripemd160 -w /home/dictionaries/rockyou.txt
+
+-t 			truecrypt volume file
+-k 			key derivation function (ripemd160 or sha512 or whirlpool)

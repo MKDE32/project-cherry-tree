@@ -1,0 +1,8 @@
+alternative zu aircrack-ng
+
+pyrit -e “essid” -i /rockyou.txt -r dump.cap attack_passthrough
+
+-e									essid
+-i									wordlist
+-r									source in pcap format
+attack_passthrough		attack with pw from a file

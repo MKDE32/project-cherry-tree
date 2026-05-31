@@ -1,0 +1,1 @@
+aktueller pfad anzeigen

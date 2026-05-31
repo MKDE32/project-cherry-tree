@@ -1,0 +1,136 @@
+# Wifite Cheat Sheet (Pentesting Essentials)
+
+## 📡 Basic Usage
+
+### Start Wifite (auto mode)
+sudo wifite
+
+### Select specific interface
+sudo wifite -i wlan0
+
+---
+
+## 🎯 Targeting Networks
+
+### Attack specific ESSID
+sudo wifite --essid "TargetWiFi"
+
+### Attack specific BSSID
+sudo wifite --bssid AA:BB:CC:DD:EE:FF
+
+### Set channel
+sudo wifite -c 6
+
+---
+
+## 🔐 Attack Types
+
+### WPA/WPA2 attack (default)
+sudo wifite --wpa
+
+### WEP attack
+sudo wifite --wep
+
+### WPS attack
+sudo wifite --wps
+
+---
+
+## ⚡ Handshake Capture
+
+### Capture WPA handshake only
+sudo wifite --wpa --no-crack
+
+### Save captures to specific folder
+sudo wifite --output /root/handshakes
+
+---
+
+## 🔑 Cracking
+
+### Use wordlist
+sudo wifite --dict /path/to/wordlist.txt
+
+### Disable cracking (capture only)
+sudo wifite --no-crack
+
+---
+
+## 📶 Signal & Target Control
+
+### Minimum signal strength
+sudo wifite --power 70
+
+### Limit number of targets
+sudo wifite --max-targets 3
+
+---
+
+## 🔄 Deauthentication
+
+### Enable deauth (default behavior)
+sudo wifite --deauth 10
+
+### Disable deauth
+sudo wifite --no-deauth
+
+---
+
+## 🧠 Advanced Options
+
+### Skip WPA networks
+sudo wifite --skip-wpa
+
+### Skip WEP networks
+sudo wifite --skip-wep
+
+### Skip WPS networks
+sudo wifite --skip-wps
+
+---
+
+## ⚙️ Interface / Monitor Mode
+
+### Enable monitor mode manually
+sudo airmon-ng start wlan0
+
+### Stop monitor mode
+sudo airmon-ng stop wlan0mon
+
+---
+
+## 📂 Output Files
+
+- WPA handshakes → .cap / .pcap
+- Cracked passwords → shown in terminal + saved
+- Logs → stored in output directory
+
+---
+
+## ⚡ One-Liners
+
+### Quick WPA handshake capture
+sudo wifite --wpa --no-crack
+
+### Target one network + crack
+sudo wifite --essid "TargetWiFi" --dict rockyou.txt
+
+### WPS attack only
+sudo wifite --wps
+
+---
+
+## ⚠️ Notes
+
+- Requires monitor mode + root privileges
+- Works best with compatible WiFi adapters (e.g. Atheros, Realtek)
+- WPA cracking = offline (not instant)
+- WPS attacks may take hours or fail if locked
+
+---
+
+## 🔥 Pro Tips
+
+- Use `--no-crack` during engagement → crack offline with hashcat
+- Combine with `airodump-ng` for manual targeting
+- Focus on WPS-enabled networks (fastest wins)

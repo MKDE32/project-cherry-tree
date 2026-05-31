@@ -1,0 +1,12 @@
+```
+sudo nmap 10.129.2.18 -sn -oA host -PE --packet-trace --disable-arp-ping
+```
+|Operating System         						|		Time To Live  |   			TCP Window Size|
+|------------------------------------|-------------------|----------------------|
+|Linux (Kernel 2.4 and 2.6)         	|				64     		|				5840|
+|Google Linux                 				|				64     		|				5720|
+|FreeBSD                 							|			64     			|			65535|
+|Windows XP                 					|				128     	|					65535|
+|Windows Vista and 7(Server 2008)    	|		128     			|			8192|
+|iOS 12.4 (Cisco Routers)         		|				255     	|					4128|
+

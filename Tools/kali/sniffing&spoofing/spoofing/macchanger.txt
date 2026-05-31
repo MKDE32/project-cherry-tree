@@ -1,0 +1,5 @@
+random mac adresse wählen
+macchanger -r eth0
+
+-r 		random mac
+-m 	set mac to

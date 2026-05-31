@@ -1,0 +1,19 @@
+#################### CONNECT ####################
+netexec smb 10.129.42.197 -u "user" -p "password" --shares
+
+#################### BRUTE FORCE ####################
+netexec smb 10.129.42.197 -u user.list -p password.list --continue-on-success -t 100 | tee hits.txt
+
+
+
+
+
+
+
+
+
+
+
+
+
+
