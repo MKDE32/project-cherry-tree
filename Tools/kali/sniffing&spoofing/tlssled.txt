@@ -1,7 +1,0 @@
-checking if the target supports the SSLv2 protocol, the NULL cipher, weak ciphers based on their key length (40 or 56 bits), the availability of strong ciphers (like AES), if the digital certificate is MD5 signed, and the current SSL/TLS renegotiation capabilities
-
-TESTEN
-tlssled 192.168.178.10 443
-
-OUTPUTFILES
-/home/username/TLSSLedXXXXXXXXX
