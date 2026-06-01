@@ -1,3 +1,0 @@
-LinEnum 
-linuxprivchecker
-Privilege Escalation Awesome Scripts SUITE (PEASS)
