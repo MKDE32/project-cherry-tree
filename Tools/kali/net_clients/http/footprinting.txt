@@ -1,8 +1,0 @@
-• curl https://www.example.com: Dieser Befehl sendet eine HTTP-GET-Anforderung an die angegebene URL und gibt den Inhalt der Antwort auf die Standardausgabe aus.
-• curl -I https://www.example.com: Dieser Befehl sendet eine HTTP-HEAD-Anforderung an die angegebene URL und gibt nur den Kopfteil der Antwort aus.
-• curl -X POST -d "key=value" https://www.example.com: Dieser Befehl sendet eine HTTP-POST-Anforderung an die angegebene URL mit dem angegebenen Daten.
-• curl -X PUT -d "key=value" https://www.example.com: Dieser Befehl sendet eine HTTP-PUT-Anforderung an die angegebene URL mit dem angegebenen Daten.
-• curl -u username:password https://www.example.com: Dieser Befehl sendet eine HTTP-Anforderung an die angegebene URL und gibt den Inhalt der Antwort auf die Standardausgabe aus. Dabei wird der angegebene Benutzername und das Passwort für die Anmeldung verwendet.
-• curl -o output.html https://www.example.com: Dieser Befehl sendet eine HTTP-GET-Anforderung an die angegebene URL und speichert die Antwort in der Datei output.html.
-• curl -O https://www.example.com/file.zip: Dieser Befehl sendet eine HTTP-GET-Anforderung an die angegebene URL und speichert die Antwort in der Datei mit dem gleichen Namen wie auf dem Server.
-
