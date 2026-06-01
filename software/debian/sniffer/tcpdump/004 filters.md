@@ -1,6 +1,8 @@
 | Filter               | Meaning               |
 | -------------------- | --------------------- |
+| `proto`              | protocol              |
 | `host 10.10.10.5`    | Traffic to/from host  |
+| `net`                | from or to a network  |
 | `src host IP`        | Source host only      |
 | `dst host IP`        | Destination host only |
 | `port 80`            | Specific port         |
