@@ -9,4 +9,4 @@
 | `udp`                | UDP traffic           |
 | `icmp`               | ICMP traffic          |
 | `net 192.168.1.0/24` | Entire subnet         |
-| `not port 22`        | Exclude SSH           |
+
