@@ -78,17 +78,7 @@
 | SNI Hostname | `tls.handshake.extensions_server_name` |
 | Certificate Exchange | `tls.handshake.certificate` |
 
----
 
-## Credential Hunting
-
-| Purpose | Filter |
-|----------|--------|
-| HTTP Basic Auth | `http.authorization` |
-| FTP Credentials | `ftp.request.command == "USER" \|\| ftp.request.command == "PASS"` |
-| NTLM Authentication | `ntlmssp` |
-| Kerberos Authentication | `kerberos` |
-| LDAP Bind Requests | `ldap` |
 
 ---
 
