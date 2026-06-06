@@ -43,17 +43,6 @@
 
 
 
-# Network Recon Detection
-
-| Activity | Filter |
-|-----------|--------|
-| ARP Scan | `arp` |
-| ICMP Sweep | `icmp.type == 8` |
-| TCP SYN Scan | `tcp.flags.syn == 1 && tcp.flags.ack == 0` |
-| SYN/ACK Responses | `tcp.flags.syn == 1 && tcp.flags.ack == 1` |
-| RST Responses | `tcp.flags.reset == 1` |
-
-
 
 
 
