@@ -9,7 +9,7 @@
 | UDP | `udp` |
 | ICMP (Ping) | `icmp` |
 | ARP | `arp` |
-| SMB | `smb || smb2` |
+| SMB | `smb` || `smb2` |
 | FTP | `ftp` |
 | SSH | `ssh` |
 | DHCP | `bootp` |
