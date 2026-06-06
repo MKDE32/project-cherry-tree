@@ -1,4 +1,4 @@
-## Useful Searches During Internal Pentests
+# useful
 
 | Goal | Filter |
 |--------|--------|
@@ -10,3 +10,33 @@
 | Detect LLMNR Traffic | `llmnr` |
 | Detect NBNS Traffic | `nbns` |
 | Detect mDNS Traffic | `mdns` |
+
+
+# cred hunting
+
+| Purpose | Filter |
+|----------|--------|
+| HTTP Basic Auth | `http.authorization` |
+| FTP Credentials | `ftp.request.command == "USER" \|\| ftp.request.command == "PASS"` |
+| NTLM Authentication | `ntlmssp` |
+| Kerberos Authentication | `kerberos` |
+| LDAP Bind Requests | `ldap` |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
