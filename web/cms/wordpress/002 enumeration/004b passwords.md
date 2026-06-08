@@ -12,13 +12,6 @@ curl -X POST -d "<methodCall><methodName>wp.getUsersBlogs</methodName><params><p
 
 ```right password
   ...
-<?xml version="1.0" encoding="UTF-8"?>  
-<methodResponse>  
-  <params>  
-    <param>  
-      <value>  
-      <array><data>  
-  <value><struct>
   <member><name>isAdmin</name><value><boolean>1</boolean></value></member>
   <member><name>url</name><value><string>http://blog.inlanefreight.com/</string></value></member>
   <member><name>blogid</name><value><string>1</string></value></member>
