@@ -1,4 +1,5 @@
 # reminder
+- this is an xmlrpc attack
 - we can do this bruteforcing the
   - login page
   - xmlrpc.php page
