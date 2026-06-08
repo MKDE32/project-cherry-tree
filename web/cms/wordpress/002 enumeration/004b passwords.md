@@ -3,8 +3,9 @@
 curl -X POST -d "<methodCall><methodName>wp.getUsersBlogs</methodName><params><param><value>admin</value></param><param><value>CORRECT-PASSWORD</value></param></params></methodCall>" http://blog.inlanefreight.com/xmlrpc.php
 ```
 right password example:  
+
 ><?xml version="1.0" encoding="UTF-8"?>  
-<methodResponse>  
+><methodResponse>  
 >  <params>  
 >    <param>  
 >      <value>  
