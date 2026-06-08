@@ -1,6 +1,6 @@
 # link hovering method
 ## reminder
-- u can get usernames when you hover over the link post author by eg. admin
+- u can get usernames when you hover over the link post author eg. `by admin`
 - the author has usually the id 1
 
 ```
