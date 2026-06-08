@@ -7,7 +7,7 @@ right password example:
 ><?xml version="1.0" encoding="UTF-8"?>  
 <methodResponse>  
 ...  
-<member><name>isAdmin</name><value><boolean>1</boolean></value></member>  
+/<member><name>isAdmin</name><value><boolean>1</boolean></value></member>  
   
 <member><name>url</name><value><string>http://blog.inlanefreight.com/</string></value></member>  
 
