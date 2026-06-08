@@ -1,4 +1,4 @@
-# version checking
+# version enum
 ## html
 ```
 curl -s -X GET http://blog.inlanefreight.com | grep '<meta name="generator"'
@@ -11,5 +11,31 @@ curl -s -X GET http://blog.inlanefreight.com | grep '<meta name="generator"'
 
 ## js
 >... validationEngine.js?ver=5.3.3' ...
+
+# plugin enum
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
