@@ -4,7 +4,8 @@ curl -X POST -d "<methodCall><methodName>wp.getUsersBlogs</methodName><params><p
 ```
 right password example:  
 
-`<?xml version="1.0" encoding="UTF-8"?>  
+```right password
+<?xml version="1.0" encoding="UTF-8"?>  
 <methodResponse>  
   <params>  
     <param>  
@@ -16,7 +17,8 @@ right password example:
   <member><name>blogid</name><value><string>1</string></value></member>
   <member><name>blogName</name><value><string>Inlanefreight</string></value></member>
   <member><name>xmlrpc</name><value><string>http://blog.inlanefreight.com/xmlrpc.php</string></value></member>
-...`
+...
+```
 
 
 
