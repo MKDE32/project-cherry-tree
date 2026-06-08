@@ -8,11 +8,16 @@ right password example:
 <methodResponse>  
 ...  
 <member><name>isAdmin</name><value><boolean>1</boolean></value></member>  
+  
 <member><name>url</name><value><string>http://blog.inlanefreight.com/</string></value></member>  
->  <member><name>blogid</name><value><string>1</string></value></member>  
->  <member><name>blogName</name><value><string>Inlanefreight</string></value></member>  
->  <member><name>xmlrpc</name><value><string>http://blog.inlanefreight.com/xmlrpc.php</string></value></member>  
-> ...  
+
+<member><name>blogid</name><value><string>1</string></value></member>  
+
+<member><name>blogName</name><value><string>Inlanefreight</string></value></member>  
+
+<member><name>xmlrpc</name><value><string>http://blog.inlanefreight.com/xmlrpc.php</string></value></member>  
+
+...  
 
 
 
