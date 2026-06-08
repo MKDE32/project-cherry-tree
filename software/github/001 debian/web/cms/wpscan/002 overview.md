@@ -1,0 +1,4 @@
+```
+wpscan --hh
+wpscan --version
+```
