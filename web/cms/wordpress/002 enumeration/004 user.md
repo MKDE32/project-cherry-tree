@@ -21,7 +21,7 @@ curl http://blog.inlanefreight.com/wp-json/wp/v2/users | jq
 ```
 >"id": 1,  
 "name": "admin",  
-...
+...  
 "link": "http://blog.inlanefreight.com/index.php/author/admin/",  
 
 
