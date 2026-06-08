@@ -6,8 +6,8 @@ right password example:
 
 ><?xml version="1.0" encoding="UTF-8"?>  
 ><methodResponse>  
->  <params>  
->    <param>  
+>>  <params>  
+>>    <param>  
 >      <value>  
 >      <array><data>  
 >  <value><struct>  
