@@ -9,6 +9,7 @@ curl -X POST -d "<methodCall><methodName>wp.getUsersBlogs</methodName><params><p
 # right password:  
 
 ```right password
+  ...
 <?xml version="1.0" encoding="UTF-8"?>  
 <methodResponse>  
   <params>  
@@ -21,11 +22,14 @@ curl -X POST -d "<methodCall><methodName>wp.getUsersBlogs</methodName><params><p
   <member><name>blogid</name><value><string>1</string></value></member>
   <member><name>blogName</name><value><string>Inlanefreight</string></value></member>
   <member><name>xmlrpc</name><value><string>http://blog.inlanefreight.com/xmlrpc.php</string></value></member>
+  ...
 ```
 # wrong password
 ```
-          <name>faultCode</name>
-          <value><int>403</int></value>
+  ...
+<name>faultCode</name>
+<value><int>403</int></value>
+  ...
 ```
 
 
