@@ -19,7 +19,11 @@ Location: `http://blog.inlanefreight.com/index.php/author/admin/`
 ```
 curl http://blog.inlanefreight.com/wp-json/wp/v2/users | jq
 ```
-
+>"id": 1,
+"name": "admin",
+"url": "",
+"description": "",
+"link": "http://blog.inlanefreight.com/index.php/author/admin/",
 
 
 
