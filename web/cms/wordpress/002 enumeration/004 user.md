@@ -11,7 +11,7 @@ curl -s -I http://blog.inlanefreight.com/?author=1
 ```
 >HTTP/1.1 301 Moved Permanently  
 ...  
-Location: http://blog.inlanefreight.com/index.php/author/`admin`/
+Location: `http://blog.inlanefreight.com/index.php/author/admin/`
 
 - not existing user gives 404 not found
 
