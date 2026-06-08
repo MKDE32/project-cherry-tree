@@ -10,3 +10,5 @@ curl -s -X GET http://blog.inlanefreight.com | sed 's/href=/\n/g' | sed 's/src=/
 ```
 curl -I -X GET http://blog.inlanefreight.com/wp-content/plugins/mail-masta
 ```
+- if the plugin exist we get acess or redirect
+- if not we get a 404 not found
