@@ -1,4 +1,4 @@
-# version checkin
+# version checking
 ## html
 ```
 curl -s -X GET http://blog.inlanefreight.com | grep '<meta name="generator"'
