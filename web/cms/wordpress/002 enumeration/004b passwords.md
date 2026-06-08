@@ -1,5 +1,7 @@
 # reminder
-
+- we can do this bruteforcing the
+  - login page
+  - xmlrpc.php page
 
 
 # pw enum
