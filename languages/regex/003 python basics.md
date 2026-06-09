@@ -1,11 +1,3 @@
-# examples
-
-
-
-
-
-
-
 # re modul
 ```
 import re
@@ -30,7 +22,20 @@ re.match(pattern, text)      # nur am Stringanfang
 
 
 
+# examples
 
+| Zweck             | Regex                  |
+| ----------------- | ---------------------- |
+| Zahl finden       | `\d+`                  |
+| Wort finden       | `\w+`                  |
+| Nicht-Leerzeichen | `\S+`                  |
+| Beliebiger Text   | `.*`                   |
+| URL               | `https?://\S+`         |
+| E-Mail            | `[\w.-]+@[\w.-]+\.\w+` |
+| Anfang der Zeile  | `^`                    |
+| Ende der Zeile    | `$`                    |
+| Zeichenmenge      | `[a-z]`                |
+| Alles außer X     | `[^X]+`                |
 
 
 
