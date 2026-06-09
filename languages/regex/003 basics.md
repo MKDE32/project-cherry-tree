@@ -1,7 +1,16 @@
-super website: regex.com
+# info
+super website: `regex.com`
+
+# example
+```
+'(https?://[^']+)'
+```
 
 
-Regular Expression / Expression flag
+
+
+
+# Regular Expression / Expression flag
 / sets start and end of regular expression
 /RegularExpression/ExpressionFlag
 
@@ -9,7 +18,7 @@ Regular Expression / Expression flag
 
 
 
-Character
+# Character
 Buchstaben
 abc
 
@@ -50,7 +59,7 @@ not
 
 
 
-Range
+# Range
 a-z Lowecase
 [a-z]
 
@@ -64,7 +73,7 @@ A-Z Uppercase
 
 
 
-Beginning / End
+# Beginning / End
 lines that begin with
 ^Wort
 
@@ -78,7 +87,7 @@ outputs blank lines
 
 
 
-Quantifier
+# Quantifier
 0 or more of the preceding token
 *
 
@@ -95,7 +104,7 @@ matches 2-4 of the preceding token
 
 
 
-Look Behind
+# Look Behind
 positive look behind
 (?<=the).
 markiert was nach der klammer steht nach dem Ausdruck in der look behind klammer
@@ -118,7 +127,7 @@ inverted
 
 ------------------------------------------------------------------------------
 ------------------------------------------------------------------------------
-Flags
+# Flags
 
 global search
 g
