@@ -1,12 +1,14 @@
-#################### NETEXEC ####################
+# NETEXEC
+```
 nxc smb 10.129.234.121 -u mendres -p 'Inlanefreight2025!' --spider IT --content --pattern "passw"
+```
 
 
-
-#################### MANSPIDER ####################
+# MANSPIDER
+```
 https://github.com/blacklanternsecurity/MANSPIDER
 docker run --rm -v ./manspider:/root/.manspider blacklanternsecurity/manspider 10.129.234.121 -c 'passw' -u 'mendres' -p 'Inlanefreight2025!'
-
+```
 
 
 
