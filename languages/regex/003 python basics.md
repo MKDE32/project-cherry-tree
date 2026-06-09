@@ -1,3 +1,11 @@
+# examples
+
+
+
+
+
+
+
 # re modul
 ```
 import re
@@ -7,6 +15,27 @@ re.findall(pattern, text)    # alle Treffer als Liste
 re.sub(pattern, neu, text)   # ersetzen
 re.match(pattern, text)      # nur am Stringanfang
 ```
+
+# re functions
+| Funktion         | Zweck                       |
+| ---------------- | --------------------------- |
+| `re.search()`    | Erstes Match finden         |
+| `re.findall()`   | Alle Matches                |
+| `re.finditer()`  | Iterator mit Match-Objekten |
+| `re.match()`     | Nur am Anfang               |
+| `re.fullmatch()` | Gesamter String muss passen |
+| `re.sub()`       | Ersetzen                    |
+| `re.split()`     | Aufteilen                   |
+
+
+
+
+
+
+
+
+
+
 # strings
 | Regex | Bedeutung                       | Beispiel | Match        |
 | ----- | ------------------------------- | -------- | ------------ |
@@ -29,7 +58,7 @@ re.match(pattern, text)      # nur am Stringanfang
 | `{2,}`  | Mindestens 2-mal | `a{2,}`   |
 
 
-
+# character sets
 | Regex         | Bedeutung         |
 | ------------- | ----------------- |
 | `[abc]`       | a oder b oder c   |
@@ -41,14 +70,29 @@ re.match(pattern, text)      # nur am Stringanfang
 | `[^"]+`       | Alles außer `"`   |
 
 
+# anchors
+| Regex | Bedeutung          |
+| ----- | ------------------ |
+| `^`   | Anfang des Strings |
+| `$`   | Ende des Strings   |
+| `\b`  | Wortgrenze         |
+| `\B`  | Keine Wortgrenze   |
 
 
 
+# groups
+| Regex     | Bedeutung           |          |
+| --------- | ------------------- | -------- |
+| `(abc)`   | Capture Group       |          |
+| `(?:abc)` | Non-Capturing Group |          |
+| `(a       | b)`                 | a ODER b |
 
 
-
-
-
+# alternatives
+| Regex | Bedeutung |              |               |
+| ----- | --------- | ------------ | ------------- |
+| `cat  | dog`      | cat oder dog |               |
+| `jpg  | png       | gif`         | Dateiendungen |
 
 
 
