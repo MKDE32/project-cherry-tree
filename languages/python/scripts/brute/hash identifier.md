@@ -1,3 +1,4 @@
+```
 import re
 
 def identify_hash(hash_value: str):
@@ -39,3 +40,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+```
