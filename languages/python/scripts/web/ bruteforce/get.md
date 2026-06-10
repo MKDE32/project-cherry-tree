@@ -3,7 +3,7 @@
 #only get request
 
 
-
+```
 import sys
 import requests
 
@@ -17,7 +17,7 @@ with open("liste.txt") as f:
         if r.status_code == 200:
             print(f'Found valid credentials "{line.strip()}"')
             sys.exit()
-
+```
 
 
 
