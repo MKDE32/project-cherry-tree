@@ -1,7 +1,7 @@
-#bruteforces default creds with a .txt
-#z.B. admin:123456
-#only get request
-
+#bruteforces default creds with a .txt  
+#z.B. admin:123456  
+#only get request  
+ 
 
 ```
 import sys
