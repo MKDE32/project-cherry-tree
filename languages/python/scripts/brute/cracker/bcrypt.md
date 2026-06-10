@@ -1,3 +1,4 @@
+```
 import bcrypt
 from pathlib import Path
 from tqdm import tqdm
@@ -29,7 +30,7 @@ def crack_bcrypt(target_hash):
 
     print(f"[*] Wordlist geladen: {len(passwords)} Einträge")
 
-    # 🔥 Fortschrittsbalken
+    #  Fortschrittsbalken
     for pw in tqdm(passwords, desc="Cracking", unit="pw"):
         pw_bytes = pw.encode('utf-8')
 
@@ -44,3 +45,5 @@ def crack_bcrypt(target_hash):
 if __name__ == "__main__":
     target = input("Hash: ").strip()
     crack_bcrypt(target)
+
+```
