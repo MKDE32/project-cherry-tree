@@ -1,7 +1,7 @@
 #pip install dnspython
 
 
-
+```python
 import dns.resolver
 import dns.reversename
 
@@ -64,17 +64,5 @@ if __name__ == "__main__":
         for r in reverse_lookup(ip, resolver):
             print(" -", r)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+```
 
