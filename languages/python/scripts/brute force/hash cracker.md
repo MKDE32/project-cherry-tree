@@ -1,3 +1,4 @@
+```
 import hashlib
 import sys
 import time
@@ -85,12 +86,6 @@ if __name__ == "__main__":
 
     crack_hash(target_hash, wordlist, algo, salt, salt_position)
 
-
-
-
-
-
-
-
+```
 
 
