@@ -1,6 +1,7 @@
 #Voraussetzungen: pip install pillow
 #liest EXIF Daten aus Bildern aus
 
+```python
 import sys
 from PIL import Image
 from PIL.ExifTags import TAGS
@@ -37,7 +38,7 @@ def main():
 
 if __name__ == "__main__":
     main()
-
+```
 
 
 
