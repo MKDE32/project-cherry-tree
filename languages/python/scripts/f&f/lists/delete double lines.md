@@ -1,3 +1,6 @@
+
+deletes double lines
+```
 #lösche doppelte Zeilen
 
 input_file = "liste.txt"
@@ -12,7 +15,7 @@ with open(output_file, "w", encoding="utf-8") as outfile:
     outfile.writelines(unique_lines)
 
 print(f"Doppelte Einträge wurden entfernt. Ergebnis in {output_file} gespeichert")
-
+```
 
 
 
