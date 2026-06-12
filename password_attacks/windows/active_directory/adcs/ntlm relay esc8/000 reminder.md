@@ -1,21 +1,22 @@
 - adcs can occur by web enrollment
 - if so, it uses only http
 
-
-[ Angreifer ]
-      │
-      │ forces to auth
-      ▼
-[ Domain Controller ]
-      │
-      │ NTLM Auth
-      ▼
-[ Angreifer (Relay) ]
-      │
-      │ forwards
-      ▼
+```
+       [ attacker ]
+             │
+             │ forces to auth
+             ▼
+          [ dc ]
+             │
+             │ NTLM Auth
+             ▼
+        [ attacker ]
+             │
+             │ forwards
+             ▼
 [ CA (AD CS Web Enrollment) ]
-      │
-      │ issues a cert
-      ▼
-[ Angreifer bekommt Zertifikat als DC ]
+             │
+             │ issues a cert
+             ▼
+[ attackert gets cert as dc ]
+```
