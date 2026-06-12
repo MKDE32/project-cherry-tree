@@ -15,12 +15,8 @@ OK?
   ▼
 4. Issue TGT
 ```
-
-- Client besitzt ein Schlüsselpaar
-- Private Key (bleibt beim Client)
-- Public Key (im AD gespeichert oder via Zertifikat)
-- Der Domain Controller stellt den
-- Key Distribution Center bereit
+- if a user has write permission over the `msds-keycredentiallink` of another user
+- he can take control over that user
 
 
 
