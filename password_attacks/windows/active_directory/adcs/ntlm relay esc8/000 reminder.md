@@ -1,1 +1,2 @@
-
+- adcs can occur by web enrollment
+- if so, it uses http
