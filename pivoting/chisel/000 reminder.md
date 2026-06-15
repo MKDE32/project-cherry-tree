@@ -19,12 +19,12 @@
 
 # reverse
 ```
-ATTACKER              |            | WEBSERVER  |           |    WIN1    |
+      ATTACKER        |            | WEBSERVER  |           |    WIN1    |
                       |            |            |           |            |
                     1234 < --    random      random  -- >  3389          |
 xfreerdp -> 1080 ->   |  -- >      |            |           |            |
                       |            |            |           |            |
-SERVER                |            |  CLIENT    |           |   SERVER   |
+      SERVER          |            |  CLIENT    |           |   SERVER   |
 ```
 
 # forward
