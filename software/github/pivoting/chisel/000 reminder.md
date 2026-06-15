@@ -1,7 +1,28 @@
 # overview
-- chisel uses socks5 tunneling
+
+# reverse
+```
+      ATTACKER        |            | WEBSERVER  |           |    WIN1    |
+                      |            |            |           |            |
+                    1234 < --    random         |           |            |
+xfreerdp -> 1080 ->   |  -- >      |         random  -- >  3389          |
+                      |            |            |           |            |
+      SERVER          |            |  CLIENT    |           |   SERVER   |
+```
+# reverse double
+```
+      ATTACKER        |            | WEBSERVER  |           |    WIN1    |          |  DC01
+                      |            |            |           |            |          |
+                    1234 < --    random         |           |            |          |
+xfreerdp -> 1080 ->   |  ----- >   |            |           |         random -- > 3389
+                      |            |            |           |            |          |
+      CHISEL          |            |  CHISEL    |           |   CHISEL   |          |  CHISEL
+      SERVER          |            |  CLIENT    |           |   SERVER   |          |  CLIENT
+```
+
 
 # capabilitys
+- chisel uses socks5 tunneling
 - platform independent
 - no admin rights needed if:
   - port > 1024
