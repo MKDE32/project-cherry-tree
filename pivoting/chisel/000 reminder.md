@@ -26,9 +26,7 @@ xfreerdp -> 1080 ->   |  -- >      |            |           |            |
                       |            |            |           |            |
 
 ```
-- victim -> attacker
-  - server = attacker
-  - client = victim
+
 # forward
 - attacker -> victim
   - client = attacker
