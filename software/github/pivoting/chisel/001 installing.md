@@ -1,3 +1,11 @@
+# using the premade binarys
+```
+wget https://github.com/jpillora/chisel/releases/download/v1.11.5/chisel_1.11.5_linux_amd64.gz
+wget https://github.com/jpillora/chisel/releases/download/v1.11.5/chisel_1.11.5_windows_amd64.zip
+```
+
+
+
 # self building
 ## install right go version
 ```
