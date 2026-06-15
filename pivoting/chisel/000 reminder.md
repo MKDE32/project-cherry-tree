@@ -31,9 +31,10 @@ xfreerdp -> 1080 ->   |  -- >      |         random  -- >  3389          |
       ATTACKER        |            | WEBSERVER  |           |    WIN1    |          |  DC01
                       |            |            |           |            |          |
                     1234 < --    random         |           |            |          |
-xfreerdp -> 1080 ->   |  -- >      |            |           |         random -- > 3389
+xfreerdp -> 1080 ->   |  ----- >   |            |           |         random -- > 3389
                       |            |            |           |            |          |
-      SERVER          |            |  CLIENT    |           |   SERVER   |          |
+      CHISEL          |            |  CHISEL    |           |   CHISEL   |          |  CHISEL
+      SERVER          |            |  CLIENT    |           |   SERVER   |          |  CLIENT
 ```
 
 
