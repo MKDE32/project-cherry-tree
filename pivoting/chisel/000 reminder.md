@@ -21,8 +21,8 @@
 ```
       ATTACKER        |            | WEBSERVER  |           |    WIN1    |
                       |            |            |           |            |
-                    1234 < --    random      random  -- >  3389          |
-xfreerdp -> 1080 ->   |  -- >      |            |           |            |
+                    1234 < --    random         |           |            |
+xfreerdp -> 1080 ->   |  -- >      |         random  -- >  3389          |
                       |            |            |           |            |
       SERVER          |            |  CLIENT    |           |   SERVER   |
 ```
