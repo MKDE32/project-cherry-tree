@@ -18,13 +18,13 @@
 - to check it we can use `file chisel` or `ldd chisel`
 
 # reverse
-attacker = server = listener
-pivot host = client = initiates
+attacker = server = listener  
+pivot host = client = initiates  
 
 
 # forward
-attacker = client = initiates
-pivot host = server = listener
+attacker = client = initiates  
+pivot host = server = listener  
 
 
 
