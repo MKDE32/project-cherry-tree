@@ -26,6 +26,28 @@ xfreerdp -> 1080 ->   |  -- >      |         random  -- >  3389          |
                       |            |            |           |            |
       SERVER          |            |  CLIENT    |           |   SERVER   |
 ```
+# reverse double
+```
+      ATTACKER        |            | WEBSERVER  |           |    WIN1    |          |  DC01
+                      |            |            |           |            |          |
+                    1234 < --    random         |           |            |          |
+xfreerdp -> 1080 ->   |  -- >                                         random  -- > 3389
+                      |            |            |           |            |          |
+      SERVER          |            |  CLIENT    |           |   SERVER   |          |
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # forward
 - attacker -> victim
