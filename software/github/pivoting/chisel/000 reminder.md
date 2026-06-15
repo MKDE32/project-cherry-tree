@@ -18,10 +18,14 @@
 - to check it we can use `file chisel` or `ldd chisel`
 
 # reverse
-- victim -> attacker
-  - server = attacker
-  - client = victim
+attacker = server = listener
+pivot host = client = initiates
+
+
 # forward
-- attacker -> victim
-  - client = attacker
-  -  server = victim
+attacker = client = initiates
+pivot host = server = listener
+
+
+
+
