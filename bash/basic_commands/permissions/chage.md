@@ -1,5 +1,7 @@
-chage -l test  
-Last password change                                    						: Nov 03, 2023  
+```
+chage -l test
+```
+>Last password change                                    						: Nov 03, 2023  
 Password expires                                        							: never  
 Password inactive                                      				 			: never  
 Account expires                                         							: never  
