@@ -1,3 +1,8 @@
+```
+showmount -e 192.168.1.10
+```
+
+
 mount host:/path/to/export /local/mount/point
 
 • showmount -e host: Dieser Befehl zeigt alle exportierten Verzeichnisse des angegebenen Hosts an.
