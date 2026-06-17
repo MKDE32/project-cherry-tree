@@ -1,5 +1,6 @@
 # all
 ```
+ip -brief a               # kurze Übersicht (sehr praktisch!)
 ip a                      # alle Interfaces + IPs anzeigen
 ```
 
