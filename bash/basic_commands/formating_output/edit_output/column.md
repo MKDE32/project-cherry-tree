@@ -8,7 +8,7 @@ column -c 100 -t file.txt
 
 
 # flags
-| Option        | Type              | Purpose                                           | Typical Use                               |              |
+| Option        | Type              | Purpose                                           | Typical Use                               |      
 | ------------- | ----------------- | ------------------------------------------------- | ----------------------------------------- |
 | `-t`          | flag              | Creates a table by aligning columns automatically | Format CSV-like or whitespace data        |      
 | `-s <sep>`    | flag              | Sets input column separator                       | Parse CSV (`-s ','`) or custom delimiters |      
