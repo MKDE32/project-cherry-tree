@@ -1,22 +1,24 @@
-sudo su -
-The above command requires a password to run any commands with sudo.
- There are certain occasions where we may be allowed to execute certain 
-applications, or all applications, without having to provide a password:
-
-
-
+# overview
+```
 sudo -l
-
-    (user : user) NOPASSWD: /bin/echo
-
-
-
-sudo -u user /bin/echo Hello World!
-
-    Hello World!
+```
+list what you’re allowed to run
 
 
 
-user1 auf user2 wechseln syntax (das was bei htb funktioniert hat)
 
-sudo -su user2
+
+
+
+
+# switch to root
+| Command       | User becomes | Password used     | Login shell | Loads root env | HOME becomes `/root` | Changes directory | Keeps user env |
+|--------------|-------------|------------------|-------------|----------------|----------------------|-------------------|----------------|
+| `sudo -i`    | root        | your password     | ✅ yes      | ✅ yes         | ✅ yes               | ✅ yes (`/root`)  | ❌ no          |
+| `sudo -s`    | root        | your password     | ❌ no       | ❌ mostly      | ❌ no                | ❌ no             | ✅ yes         |
+| `sudo su`    | root        | your password     | ❌ no       | ❌ mostly      | ❌ no                | ❌ no             | ✅ yes         |
+| `sudo su -`  | root        | your password     | ✅ yes      | ✅ yes         | ✅ yes               | ✅ yes (`/root`)  | ❌ no          |
+| `su`         | root        | root password     | ❌ no       | ❌ mostly      | ❌ no                | ❌ no             | ✅ yes         |
+| `su -`       | root        | root password     | ✅ yes      | ✅ yes         | ✅ yes               | ✅ yes (`/root`)  | ❌ no          |
+
+
