@@ -6,10 +6,7 @@ watch ss -tp
 
 ## most common
 ```
-ss -tuln                        # fast service discovery (TCP/UDP listening)
-ss -tulnp                       # service discovery + owning process
-ss -tanp                        # all TCP connections with processes
-ss -tulpn state established     # active connections only
+ss -tanp4
 ```
 
 
