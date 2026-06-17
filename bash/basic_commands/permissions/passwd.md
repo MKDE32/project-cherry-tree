@@ -1,8 +1,12 @@
-Changes user password.
-passwd username
+# CHANGE PW
+sudo passwd cindy
 
-disable user account
+# FORCE USER TO CHANGE HIS PW
+sudo passwd -e cindy
+
+
+# disable user account
 passwd -l username
 
-enable user account
+# enable user account
 passwd -u username
