@@ -17,7 +17,6 @@ ss -tulpn state established     # active connections only
 | Flag | Meaning | Why it matters in pentesting |
 |------|--------|------------------------------|
 | -t   | TCP sockets | Identify TCP services (web, ssh, db, etc.) |
-| -u   | UDP sockets | Find DNS, SNMP, NTP, etc. |
 | -l   | Listening sockets | Discover exposed services on the host |
 | -a   | All sockets | Shows listening + established connections |
 | -n   | Numeric output | Avoid DNS/service name resolution for speed/clarity |
