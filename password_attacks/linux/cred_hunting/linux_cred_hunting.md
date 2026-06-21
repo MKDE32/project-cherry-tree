@@ -23,6 +23,14 @@ for l in $(echo ".py .pyc .pl .go .jar .c .sh");do echo -e "\nFile extension: " 
 ```
 
 
+
+# ENUM HOMEDIR
+```
+grep 'pass' -r /home/ 2>/dev/null
+```
+
+
+
 # ENUMERATING CRONJOBS
 ```
 cat /etc/crontab
