@@ -1,3 +1,5 @@
+
+# standart auth
 ```
 xfreerdp /v:10.129.26.83 /u:Bob /p:"password" /size:1000x500 /network:modem
 ```
