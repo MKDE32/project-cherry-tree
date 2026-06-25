@@ -1,5 +1,5 @@
 ```
-dir n:\*passw* /s /b
+dir n:\*cred* /s /b
 ```
 
 
