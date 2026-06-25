@@ -21,6 +21,7 @@ find /mnt/Finance/ -name *cred*
 
 
 optionen:
+```
 -type f					nur files
 -type d					nur directorys
 iname “bla.txt”		no case sensetivity
@@ -29,3 +30,4 @@ iname “bla.txt”		no case sensetivity
 -not						nicht
 -maxdepth 1			bestimmt die Tiefe desdirectorys
 -exec blabla +		führt alles bis zum + Zeichen aus
+```
