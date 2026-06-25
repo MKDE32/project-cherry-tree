@@ -1,1 +1,7 @@
-findstr <regex>
+# example
+```
+findstr /s /i cred n:\*.*
+```
+
+
+
