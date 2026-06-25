@@ -7,6 +7,8 @@ Get-Childitem –Path C:\Users\luser\ -File -Recurse -ErrorAction SilentlyContin
 
 Get-ChildItem -Path C:\Users\MTanaka\ -Filter "*.txt" -Recurse -File | sls "Password","credential","key"
 Get-ChildItem -Recurse -Filter "*.txt" -File | Get-Content
+
+Get-ChildItem \\192.168.220.129\Finance\
 ```
 
 
