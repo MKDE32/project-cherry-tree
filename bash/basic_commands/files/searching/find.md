@@ -10,6 +10,16 @@ find . options
 find zusammen mit grep
 find . -type f -exec
 
+# smb
+```
+find /mnt/Finance/ -name *cred*
+```
+
+
+
+
+
+
 optionen:
 -type f					nur files
 -type d					nur directorys
