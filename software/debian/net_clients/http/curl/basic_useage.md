@@ -1,8 +1,8 @@
 # EXAMPLES
 ```
-curl http://154.57.164.66:30225/
+curl -X POST http://154.57.164.80:30178/serial.php
 ```
-
+post request
 
 
 # FLAGS
