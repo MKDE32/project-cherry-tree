@@ -5,7 +5,7 @@
 | MySQL      | 3306            |  mysql            |
 | MariaDB    | 3306            |  mysql            |
 | PostgreSQL | 5432            |  psql             |
-| MSSQL      | 1433            |  sqlcmd           |
+| MSSQL      | 1433, 1434(UDP), 2433(hidden) |  sqlcmd           |
 | Oracle DB  | 1521            |  sqlplus          |
 | SQLite     | N/A (fichier)   |  sqlite3          |
 | Redis      | 6379            |  redis-cli        |
