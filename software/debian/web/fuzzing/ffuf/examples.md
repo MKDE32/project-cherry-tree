@@ -1,14 +1,3 @@
-# GENERAL
-## INSTALL
-apt install ffuf -y
-
-## HOSTS FILE
-sudo sh -c 'echo "SERVER_IP  academy.htb" >> /etc/hosts'
-
-
-
-
-
 # EXAMPLES
 ## WEBSITE FUZZING
 ffuf -w /Path/wordlist.txt:FUZZ -u http://SERVER_IP:PORT/FUZZ -ic
