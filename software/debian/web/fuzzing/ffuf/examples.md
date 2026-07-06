@@ -36,24 +36,6 @@ ffuf -w ./folders.txt:FOLDERS,./wordlist.txt:WORDLIST,./extensions.txt:EXTENSION
 
 
 
-# FLAGS
-## THREADS
--t 200
-
-## USE ALWAYS!
--ic
-
-## FILTER SIZE
--fs 900
-
-## FILTER CODE
--fc 404
-
-## FILTER LENGHT
--fl 123
-
-
-
 
 
 
