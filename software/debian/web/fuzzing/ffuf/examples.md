@@ -1,6 +1,13 @@
-# EXAMPLES
-## WEBSITE FUZZING
+# directory fuzzing
+```
 ffuf -w /Path/wordlist.txt:FUZZ -u http://SERVER_IP:PORT/FUZZ -ic
+```
+
+# file fuzzing
+```
+ffuf -w ./med.txt:FUZZ -u http://154.57.164.83:30798/webfuzzing_hidden_path/flag/FUZZ -ic -e .php,.html,.txt -v
+```
+
 
 ## EXTENSION FUZZING
 ffuf -w /Path/wordlist.txt:FUZZ -u http://SERVER_IP:PORT/indexFUZZ -ic
