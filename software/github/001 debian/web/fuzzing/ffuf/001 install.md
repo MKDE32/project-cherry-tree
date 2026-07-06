@@ -1,0 +1,7 @@
+```
+go install github.com/ffuf/ffuf/v2@latest
+```
+
+
+
+
