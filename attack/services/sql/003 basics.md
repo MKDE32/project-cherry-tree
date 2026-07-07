@@ -4,7 +4,7 @@
 SHOW DATABASES;
 ```
 
-## select
+## select all
 ```
 USE htbusers;
 ```
@@ -15,7 +15,7 @@ USE htbusers;
 SHOW TABLES;
 ```
 
-## select
+## select all
 ```
 SELECT * FROM users;
 ```
