@@ -1,21 +1,29 @@
 # database
 ## overview
 ```
-SHOW DATABASES;
+SELECT name FROM master.dbo.sysdatabases
+GO
 ```
 
 ## select all
 ```
-USE htbusers;
+USE htbusers
+GO
 ```
+
+
+
+
 
 # tables
 ## overview
 ```
-SHOW TABLES;
+SELECT table_name FROM htbusers.INFORMATION_SCHEMA.TABLES
+GO
 ```
 
 ## select all
 ```
-SELECT * FROM users;
+SELECT * FROM users
+go
 ```
