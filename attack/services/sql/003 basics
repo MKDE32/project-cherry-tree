@@ -1,0 +1,20 @@
+# database
+## overview
+```
+SHOW DATABASES;
+```
+
+## select
+```
+USE htbusers;
+```
+
+
+
+
+
+
+
+
+
+
