@@ -2,7 +2,7 @@
 ```
 show variables like "secure_file_priv";
 ```
-
+if the variable is empty we can read and write
 
 
 
