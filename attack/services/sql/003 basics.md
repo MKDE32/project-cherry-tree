@@ -9,12 +9,16 @@ SHOW DATABASES;
 USE htbusers;
 ```
 
+# tables
+## overview
+```
+SHOW TABLES;
+```
 
-
-
-
-
-
+## select
+```
+SELECT * FROM users;
+```
 
 
 
