@@ -1,6 +1,13 @@
-# identify users that we can impersonate
 - sysadmins can impersonate anyone by default
 
+# check if sysadmin
+```
+SELECT SYSTEM_USER
+SELECT IS_SRVROLEMEMBER('sysadmin')
+go
+```
+
+# identify users that we can impersonate
 ```mssql
 SELECT distinct b.name
 FROM sys.server_permissions a
