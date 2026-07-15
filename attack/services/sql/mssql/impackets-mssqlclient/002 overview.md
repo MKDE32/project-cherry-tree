@@ -7,10 +7,10 @@ SELECT @@version;
 SELECT SYSTEM_USER;
 ```
 
-
-
-
-
+# check if sysadmin
+```
+SELECT IS_SRVROLEMEMBER('sysadmin');
+```
 
 
 
