@@ -22,8 +22,9 @@ GO
 [SMB] NTLMv2-SSP Hash     : luser::WIN7BOX:5e3ab1b4390b94a1:A18830632D52768450B7E2425C4A7107:0101000000000000009BFFB9DE3D..........  
 
 
-
-
+```
+hashcat -m 5600 hash.txt /usr/share/wordlists/rockyou.txt
+```
 
 
 
