@@ -25,8 +25,10 @@ GO
 ```
 hashcat -m 5600 hash.txt /usr/share/wordlists/rockyou.txt
 ```
-
-
+# important
+- the mssqlservicelogin is not a sql login
+- thus logging in with sqlcmd fails
+- fastest way to logg in is to use impackets mssqlclient
 
 
 
