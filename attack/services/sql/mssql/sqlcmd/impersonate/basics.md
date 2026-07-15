@@ -7,7 +7,7 @@ SELECT IS_SRVROLEMEMBER('sysadmin')
 go
 ```
 
-# identify users that we can impersonate
+# identify we can impersonate as without sysadmin
 ```mssql
 SELECT distinct b.name
 FROM sys.server_permissions a
