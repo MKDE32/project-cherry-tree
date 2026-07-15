@@ -8,7 +8,10 @@ GO
 
 If a user you are trying to impersonate doesn't have access to the DB you are connected with, try to move to the master DB using USE master.
 
-
+# exit again
+```
+REVERT
+```
 
 
 
