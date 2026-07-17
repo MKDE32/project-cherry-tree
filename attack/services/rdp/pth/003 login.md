@@ -1,0 +1,3 @@
+```
+xfreerdp /v:192.168.220.152 /u:lewen /pth:310FF5E84EF33F83K8146C10F9AB9BB9
+```
