@@ -1,5 +1,5 @@
 # reminder
-
+- we want to create a win service that, will execute any binary with SYSTEM privileges. 
 
 
 
