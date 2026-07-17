@@ -1,6 +1,6 @@
 # reminder
 - we want to create a win service that, will execute any binary with SYSTEM privileges. 
-
+- this method no longer works since server 2019
 
 
 
