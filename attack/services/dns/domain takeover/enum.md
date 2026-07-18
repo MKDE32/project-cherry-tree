@@ -1,4 +1,3 @@
-
 # overview
 we can use one of this tools:
 
@@ -12,11 +11,15 @@ we can use one of this tools:
 `https://dnsdumpster.com/`
 - website
 
-# enum with subfinder
+
+
+
+
+# subdomain enum with subfinder
 ```
 ./subfinder -d inlanefreight.com -v
 ```
-# enum with subbrute
+# subdomain enum with subbrute
 ```
 git clone https://github.com/TheRook/subbrute.git >> /dev/null 2>&1
 cd subbrute
@@ -27,3 +30,8 @@ echo "ns1.inlanefreight.com" > ./resolvers.txt
 
 
 
+
+# enum cname entries
+```
+host support.inlanefreight.com
+```
