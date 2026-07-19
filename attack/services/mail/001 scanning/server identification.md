@@ -1,6 +1,4 @@
-# mx records
-
-
+# identifying the mail server
 # mx records
 ```
 host -t MX microsoft.com
