@@ -16,14 +16,14 @@ dig mx google.com | grep "MX" | grep -v ";"
 
 # a records
 ```
-host -t A mail1.inlanefreight.htb.
+host -t A mail1.google.com.
 ```
->mail1.inlanefreight.htb has address 10.129.14.128
+>mail1.google.com has address 10.129.3.9
 
 
 # nmap scan
 ```
-sudo nmap -Pn -sV -sC -p25,143,110,465,587,993,995 10.129.14.128
+sudo nmap -Pn -sV -sC -p25,143,110,465,587,993,995 10.129.3.9
 ```
 
 
