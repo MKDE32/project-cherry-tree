@@ -16,10 +16,12 @@ VRFY luser
 
 
 ## EXPN
-
-
-
-
+```
+telnet 10.10.110.20 25
+EXPN support-team
+```
+>250 2.0.0 luser@google.com  
+250 2.1.5 lluser@google.com
 
 
 
