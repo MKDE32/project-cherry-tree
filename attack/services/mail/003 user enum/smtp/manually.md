@@ -2,6 +2,7 @@
 ## VRFY
 ```
 telnet 10.10.110.21 25
+HELO x
 VRFY root
 ```
 >252 2.0.0 root
@@ -18,6 +19,7 @@ VRFY luser
 ## EXPN
 ```
 telnet 10.10.110.21 25
+HELO x
 EXPN support-team
 ```
 >250 2.0.0 luser@google.com  
@@ -29,8 +31,9 @@ EXPN support-team
 ## RCPT TO
 ```
 telnet 10.10.110.21 25
+HELO x
 MAIL FROM:test@google.com
-it is
+RCPT TO:luser
 ```
 >250 2.1.0 test@google.com... Sender ok
 
