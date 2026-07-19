@@ -4,4 +4,4 @@
 | imap4 | 143  | 993          | download + managment of mails                |
 | pop3  | 110  | 995          | download mails |
 
-
+`sender` > smtp > `servera` > smtp > `serverb` > imap > `receipiant`
