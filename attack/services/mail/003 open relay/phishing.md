@@ -22,7 +22,7 @@ swaks --from notifications@whatever.com --to employees@target.com --header 'Subj
  -> To: employees@inlanefreight.com
  -> From: notifications@inlanefreight.com
  -> Subject: Company Notification
- -> Message-Id: <20201929013206.775675@parrot>
+ -> Message-Id: <20201929013206.775675@kali>
  -> X-Mailer: swaks v20190114.0 jetmore.org/john/code/swaks/
  -> 
  -> Please complete the following survey. http://myphishinglink.com/
