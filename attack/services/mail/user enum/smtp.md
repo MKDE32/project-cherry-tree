@@ -1,7 +1,7 @@
 # smtp commands
 ## VRFY
 ```
-telnet 10.10.110.20 25
+telnet 10.10.110.21 25
 VRFY root
 ```
 >252 2.0.0 root
@@ -17,7 +17,7 @@ VRFY luser
 
 ## EXPN
 ```
-telnet 10.10.110.20 25
+telnet 10.10.110.21 25
 EXPN support-team
 ```
 >250 2.0.0 luser@google.com  
@@ -27,16 +27,22 @@ EXPN support-team
 
 
 ## RCPT TO
+```
+telnet 10.10.110.21 25
+MAIL FROM:test@google.com
+it is
+```
+>250 2.1.0 test@google.com... Sender ok
 
+```
+RCPT TO:luser
+```
+>550 5.1.1 luser... User unknown
 
-
-
-
-
-
-
-
-
+```
+RCPT TO:lluser
+```
+>250 2.1.5 lluser... Recipient ok
 
 
 
