@@ -19,7 +19,7 @@ post request
 -I                header only
 -O                download file
 -L                follow redirect
--X                http method
+-X GET            http method
 -H                header
 -F                file
 -T file.txt       upload file
