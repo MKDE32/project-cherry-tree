@@ -41,7 +41,13 @@
 | `--accept=<list>` | Only download certain types | Target specific files |
 | `-np`             | Same as `--no-parent`       | Common shorthand      |
 
-
+# file / directory
+| Flag           | Meaning                | Typical Use Case              |
+| -------------- | ---------------------- | ----------------------------- |
+| `-nd`          | No directories         | Dump all files in one dir     |
+| `-P <dir>`     | Save to directory      | Organize loot                 |
+| `--cut-dirs=N` | Ignore N path elements | Clean directory structure     |
+| `-nH`          | No host directories    | Cleaner output when mirroring |
 
 
 # stealth
