@@ -1,4 +1,3 @@
-############ EXAMPLES ############
 # HTTP FORM
 ```
 hyd`ra -L user -P pass ignition.htb http-post-form "/admin:username=^USER^&password=^PASS^:F=incorrect"
