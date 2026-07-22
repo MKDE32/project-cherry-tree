@@ -1,12 +1,13 @@
 ############ EXAMPLES ############
-#HTTP FORM
-hydra -L user -P pass ignition.htb http-post-form "/admin:username=^USER^&password=^PASS^:F=incorrect"
+# HTTP FORM
+```
+hyd`ra -L user -P pass ignition.htb http-post-form "/admin:username=^USER^&password=^PASS^:F=incorrect"
+```
+# HTTPS ONLY PASSWORD
+```
+hyd`ra -l none -P rockyou.txt 10.129.147.216 https-post-form "/db/index.php:password=^PASS^&remember=yes&login=Log+In&proc_login=true:Incorrect password" -t 64 -V
+```
 
-############ HTTPS ONLY PASSWORD ############
-hydra -l none -P rockyou.txt 10.129.147.216 https-post-form "/db/index.php:password=^PASS^&remember=yes&login=Log+In&proc_login=true:Incorrect password" -t 64 -V
-
-############ FTP ############
-hydra -v -L user.lst -P word.lst -e nsr fileserver.snakeoil.net ftp
 
 # SSH
 ```
@@ -20,9 +21,18 @@ hydra -L user.list -P password.list rdp://10.129.42.197
 ```
 hydra -L user.list -P password.list smb://10.129.42.197
 ```
+# ftp
+```
+hydra -l simon -P pw.txt -s 2121 ftp://10.129.201.127
+hydra -v -L user.lst -P word.lst -e nsr fileserver.snakeoil.net ftp
+```
 
 
-############ FLAGS ############
+
+
+
+
+# FLAGS
 #NULL PASSWORD
 -e n
 
