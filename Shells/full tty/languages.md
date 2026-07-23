@@ -1,9 +1,9 @@
 
 spawnt tty shell with python
 python -c 'import pty; pty.spawn("/bin/sh")'
+
 oder zb mit bash und python 3
 python3 -c 'import pty; pty.spawn("/bin/bash")'
-
 
 spawnt tty shell with bourne shell
 /bin/sh -i
