@@ -1,4 +1,4 @@
-
+do not use! it freezes the pc atm
 ```python
 from multiprocessing import Pool, cpu_count
 from tqdm import tqdm
