@@ -1,5 +1,3 @@
-do not use! it freezes the pc atm
-```python
 from multiprocessing import Pool, cpu_count
 from tqdm import tqdm
 import bcrypt
@@ -17,39 +15,32 @@ def check_password(args):
 def crack_parallel(target_hash, passwords):
     target_hash_bytes = target_hash.encode("utf-8")
 
-    processes = max(1, cpu_count() - 3)
+    processes = max(1, cpu_count() - 2)
 
     print(f"[*] Starte mit {processes} Prozessen")
     print(f"[*] Wordlist: {len(passwords)} Einträge")
 
-    found = None
     total = len(passwords)
 
-    with Pool(cpu_count()) as pool:
-        with tqdm(total=total, desc="Cracking") as pbar:
+    with Pool(processes) as pool:
+        found = None
 
-            results = []
-
-            def callback(result):
-                nonlocal found
-                pbar.update(1)
-
-                if result and not found:
-                    found = result
-                    pool.terminate()
-
-            for pw in passwords:
-                pool.apply_async(
-                    check_password,
-                    args=((pw, target_hash_bytes),),
-                    callback=callback
-                )
-
-            pool.close()
-            pool.join()
+        for result in tqdm(
+            pool.imap_unordered(
+                check_password,
+                [(pw, target_hash_bytes) for pw in passwords]
+            ),
+            total=total,
+            desc="Cracking"
+        ):
+            if result:
+                found = result
+                break
 
     if found:
         print(f"\n[+] PASSWORT GEFUNDEN: {found}")
+    else:
+        print("\n[-] Passwort nicht gefunden")
 
     return found
 
@@ -70,4 +61,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-```
