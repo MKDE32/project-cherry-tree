@@ -1,4 +1,13 @@
 
+
+
+
+# properties
+`-v` verbose
+
+
+
+
 # input
 `-iL hosts.txt` list of targets
 
