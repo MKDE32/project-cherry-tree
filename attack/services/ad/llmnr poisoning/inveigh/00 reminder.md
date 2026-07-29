@@ -1,0 +1,2 @@
+- PowerShell Inveigh - original version developed over many years. For now at least, this version (1.506) will go without additional updates. Documentation can be found here.
+- C# Inveigh (aka InveighZero) - original C# POC code combined with a C# port of most of the PowerShell version's code. This version has now been rebuilt for C# and is taking over as the primary version.
