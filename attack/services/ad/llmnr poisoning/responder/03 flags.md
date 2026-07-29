@@ -1,0 +1,11 @@
+| Flag             | Function          | Technical Description                                                       | Typical Use Case                              | Risks / Notes                         |
+| ---------------- | ----------------- | --------------------------------------------------------------------------- | --------------------------------------------- | ------------------------------------- |
+| `-A`             | Analyze mode      | Passive mode: listens to NBT-NS, LLMNR, BROWSER without poisoning responses | Initial reconnaissance, traffic observation   | Stealthy, no active interference      |
+| `-I <interface>` | Interface         | Specifies network interface (e.g., `eth0`, `tun0`)                          | Required in most setups                       | Mandatory for proper operation        |
+| `-i <IP>`        | Local IP          | Manually sets the IP address to use                                         | Multi-interface environments                  | Alternative to `-I`                   |
+| `-v`             | Verbose           | Increases logging output                                                    | Debugging / troubleshooting                   | Produces a lot of noise               |
+| `-f`             | Fingerprint       | Attempts to identify remote host OS and version                             | Recon / host profiling                        | Slightly more detectable              |
+| `-w`             | WPAD server       | Enables built-in WPAD rogue proxy server                                    | Capture HTTP traffic via auto-proxy detection | Very effective in enterprise networks |
+| `-wf`            | WPAD + force auth | WPAD + forces authentication                                                | Captures NTLM credentials automatically       | May trigger login prompts             |
+| `-F`             | Force NTLM        | Forces NTLM authentication                                                  | Credential harvesting / relay attacks         | Intrusive                             |
+| `-P`             | Force proxy auth  | Forces proxy authentication                                                 | Capture credentials via proxy                 | May cause user login pop-ups          |
